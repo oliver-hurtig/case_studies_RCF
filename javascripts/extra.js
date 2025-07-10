@@ -22,3 +22,12 @@ document.addEventListener("DOMContentLoaded", function(){
         item.addEventListener("toggle", handleClickOnDetails);
     });
 });
+
+if (window.MathJax) {
+  document.addEventListener("DOMContentLoaded", () => {
+    window.MathJax.typesetPromise();
+  });
+  document.addEventListener("navigation", () => {
+    window.MathJax.typesetPromise();
+  });
+}
