@@ -22,10 +22,14 @@ document.addEventListener("DOMContentLoaded", function(){
         item.addEventListener("toggle", handleClickOnDetails);
     });
 
-    if (window.MathJax) {
-      window.MathJax.typesetPromise();
-      document.addEventListener("navigation", () => {
-        window.MathJax.typesetPromise();
-      });
-    }
 });
+
+function typesetMathJax() {
+  if (window.MathJax && window.MathJax.typesetPromise) {
+    window.MathJax.typesetPromise();
+  }
+}
+
+document.addEventListener("DOMContentLoaded", typesetMathJax);
+document.addEventListener("navigation", typesetMathJax);
+window.addEventListener("hashchange", typesetMathJax);
