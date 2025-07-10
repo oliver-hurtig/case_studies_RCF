@@ -26,10 +26,17 @@ document.addEventListener("DOMContentLoaded", function(){
 
 function typesetMathJax() {
   if (window.MathJax && window.MathJax.typesetPromise) {
-    window.MathJax.typesetPromise();
+    setTimeout(() => {
+      window.MathJax.typesetPromise();
+    }, 50); // Delay to ensure DOM is updated
   }
 }
 
 document.addEventListener("DOMContentLoaded", typesetMathJax);
 document.addEventListener("navigation", typesetMathJax);
 window.addEventListener("hashchange", typesetMathJax);
+
+// Also handle anchor navigation on initial load
+if (window.location.hash) {
+  window.addEventListener("load", typesetMathJax);
+}
