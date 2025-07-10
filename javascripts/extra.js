@@ -21,13 +21,11 @@ document.addEventListener("DOMContentLoaded", function(){
     detailsElements.forEach(function (item) {
         item.addEventListener("toggle", handleClickOnDetails);
     });
-});
 
-if (window.MathJax) {
-  document.addEventListener("DOMContentLoaded", () => {
-    window.MathJax.typesetPromise();
-  });
-  document.addEventListener("navigation", () => {
-    window.MathJax.typesetPromise();
-  });
-}
+    if (window.MathJax) {
+      window.MathJax.typesetPromise();
+      document.addEventListener("navigation", () => {
+        window.MathJax.typesetPromise();
+      });
+    }
+});
