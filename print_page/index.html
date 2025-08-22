@@ -1375,10 +1375,10 @@ e_p &amp;= {CI}_{grid} \times el_{grid\_aux} &amp;= 2.5\ \color{grey}{\left.g\,C
 E_{products} &amp;&amp;=  2.5\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
 \end{aligned}
 \]</div>
-<p>Emissions attributed to hydrogen:
-$$
-E_{hydrogen} = E_{products} \times \frac{v_{hydrogen}}{v_{hydrogen} + v_{oxygen} \times r_{oh}} = 2.1 \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
-$$</p>
+<p>Emissions attributed to hydrogen:</p>
+<div class="arithmatex">\[
+E_{hydrogen} = E_{products} \times \frac{v_{hydrogen}}{v_{hydrogen} + v_{oxygen} \times r_{oh}} = 2.1\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+\]</div>
 <details class="success">
 <summary>Threshold reached</summary>
 <p>The threshold of <span class="arithmatex">\(28.2\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}\)</span> is met. We can declare the fuel as RFNBO (or low carbon fuel).</p>
@@ -2004,10 +2004,10 @@ $$</p>
 </table>
 <h2 id="rfnbo%20case%20studies-2-time-averaging-calculation">Calculation</h2>
 <h3 id="rfnbo%20case%20studies-2-time-averaging-hourly-averaging-low-renewables">Hourly averaging, low renewables</h3>
-<p>Amount of hydrogen produced: 
-$$
-{prod}<em ren="ren">{H2} = \left(el</em>} + {el<em ely="ely">{grid_ely} \right)  \times  \eta</em>
-$$} \approx 60 \color{grey}{GJ</p>
+<p>Amount of hydrogen produced: </p>
+<div class="arithmatex">\[
+{prod}_{H2} = \left(el_{ren} + {el}_{grid\_ely} \right)  \times  \eta_{ely} \approx 60\ \color{grey}{GJ}
+\]</div>
 <p>Total GHG intensity:</p>
 <div class="arithmatex">\[
 \begin{aligned}
@@ -2032,10 +2032,10 @@ e_p &amp;= \frac{el_{grid\_aux} \times  CI_{grid}}{{prod}_{H2}} &amp;\approx 4.2
 <p>This example should not imply that hourly averaging is bad. In other hours, the share of renewables is higher than the average, and a higher share of the production can be declared as RFNBO. In many cases, monthly averaging might not reach the threshold, and the whole monthly production could not be declared as RFNBO.</p>
 </details>
 <h3 id="rfnbo%20case%20studies-2-time-averaging-monthly-averaging">Monthly averaging</h3>
-<p>Amount of hydrogen produced:
-$$
-{prod}<em ren="ren">{H2} = \left(el</em>} + {el<em ely="ely">{grid_ely} \right)  \times  \eta</em>
-$$} \approx 43.2 \color{grey}{TJ</p>
+<p>Amount of hydrogen produced:</p>
+<div class="arithmatex">\[
+{prod}_{H2} = \left(el_{ren} + {el}_{grid\_ely} \right)  \times  \eta_{ely} \approx 43.2\ \color{grey}{TJ}
+\]</div>
 <p>Total GHG intensity:</p>
 <div class="arithmatex">\[
 {E}_{H2} = \frac{\left( {el}_{grid\_ ely} + el_{grid\_aux} \right)  \times  CI_{grid}}{{prod}_{H2}} \approx 18.1\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
@@ -2044,10 +2044,10 @@ $$} \approx 43.2 \color{grey}{TJ</p>
 <summary>Threshold reached</summary>
 <p>The threshold of <span class="arithmatex">\(28.2\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}\)</span> is met. We can declare the fuel as RFNBO (or low carbon fuel).</p>
 </details>
-<p>Share of RFNBO in the output: 
-$$
-Share_{RFNBO-H_2} = \frac{el_{ren}}{el_{ren} + {el}_{grid_ely}} \approx 83\color{grey}{\%}
-$$</p>
+<p>Share of RFNBO in the output: </p>
+<div class="arithmatex">\[
+Share_{RFNBO-H_2} = \frac{el_{ren}}{el_{ren} + {el}_{grid\_ely}} \approx 83\color{grey}{\%}
+\]</div>
 <p>The remainder is low-carbon fuel.</p>
 <h2 id="rfnbo%20case%20studies-2-time-averaging-conclusion">Conclusion</h2>
 <p>This case study shows how averaging over shorter time scales can exclude some periods with low renewables from the RFNBO production. In other cases that are not shown here, the contrary could happen that the average over a longer period has a too high GHG intensity to qualify.</p></section><section class="print-page" id="rfnbo%20case%20studies-3-relevant-inputs" heading-number="2.3"><h1 id="rfnbo%20case%20studies-3-relevant-inputs-3-relevant-inputs">3: Relevant inputs</h1>
@@ -4577,14 +4577,14 @@ e_{i,elastic} &amp;= e_{hydrogen} + e_{CO_2} &amp;= 9\ \color{grey}{\left.g\,CO_
 {E}_{products} &amp;= e_{i,elastic} - e_{ex-use} &amp;= -1\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{methane}\right.}
 \end{aligned}
 \]</div>
-<p>With normal energy allocation, this gives:
-$$
+<p>With normal energy allocation, this gives:</p>
+<div class="arithmatex">\[
 \begin{aligned}
-{E}<em products="products">{heat}  &amp;= \frac{{E}</em>
-\
-{E}}}{1 + r_{hm}} &amp;= -0.9 \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{product}\right.<em products="products">{methane} &amp;= \frac{{E}</em>
+{E}_{heat}  &amp;= \frac{{E}_{products}}{1 + r_{hm}} &amp;= -0.9\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{product}\right.}
+\\
+{E}_{methane} &amp;= \frac{{E}_{products}}{1 + r_{hm}} + e_u &amp;= 9.1\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{product}\right.}
 \end{aligned}
-$$}}{1 + r_{hm}} + e_u &amp;= 9.1 \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{product}\right.</p>
+\]</div>
 <p>RED II Annex V part C point 17 allows: ...The greenhouse gas intensity of excess useful heat or excess electricity is the same as the greenhouse gas intensity of heat or electricity delivered to the fuel production process...</p>
 <p>The heat needed for the process comes entirely from the hydrogen, so:</p>
 <div class="arithmatex">\[

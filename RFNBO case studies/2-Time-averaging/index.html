@@ -1347,10 +1347,10 @@
 </table>
 <h2 id="calculation">Calculation</h2>
 <h3 id="hourly-averaging-low-renewables">Hourly averaging, low renewables</h3>
-<p>Amount of hydrogen produced: 
-$$
-{prod}<em ren="ren">{H2} = \left(el</em>} + {el<em ely="ely">{grid_ely} \right)  \times  \eta</em>
-$$} \approx 60 \color{grey}{GJ</p>
+<p>Amount of hydrogen produced: </p>
+<div class="arithmatex">\[
+{prod}_{H2} = \left(el_{ren} + {el}_{grid\_ely} \right)  \times  \eta_{ely} \approx 60\ \color{grey}{GJ}
+\]</div>
 <p>Total GHG intensity:</p>
 <div class="arithmatex">\[
 \begin{aligned}
@@ -1375,10 +1375,10 @@ e_p &amp;= \frac{el_{grid\_aux} \times  CI_{grid}}{{prod}_{H2}} &amp;\approx 4.2
 <p>This example should not imply that hourly averaging is bad. In other hours, the share of renewables is higher than the average, and a higher share of the production can be declared as RFNBO. In many cases, monthly averaging might not reach the threshold, and the whole monthly production could not be declared as RFNBO.</p>
 </details>
 <h3 id="monthly-averaging">Monthly averaging</h3>
-<p>Amount of hydrogen produced:
-$$
-{prod}<em ren="ren">{H2} = \left(el</em>} + {el<em ely="ely">{grid_ely} \right)  \times  \eta</em>
-$$} \approx 43.2 \color{grey}{TJ</p>
+<p>Amount of hydrogen produced:</p>
+<div class="arithmatex">\[
+{prod}_{H2} = \left(el_{ren} + {el}_{grid\_ely} \right)  \times  \eta_{ely} \approx 43.2\ \color{grey}{TJ}
+\]</div>
 <p>Total GHG intensity:</p>
 <div class="arithmatex">\[
 {E}_{H2} = \frac{\left( {el}_{grid\_ ely} + el_{grid\_aux} \right)  \times  CI_{grid}}{{prod}_{H2}} \approx 18.1\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
@@ -1387,10 +1387,10 @@ $$} \approx 43.2 \color{grey}{TJ</p>
 <summary>Threshold reached</summary>
 <p>The threshold of <span class="arithmatex">\(28.2\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}\)</span> is met. We can declare the fuel as RFNBO (or low carbon fuel).</p>
 </details>
-<p>Share of RFNBO in the output: 
-$$
-Share_{RFNBO-H_2} = \frac{el_{ren}}{el_{ren} + {el}_{grid_ely}} \approx 83\color{grey}{\%}
-$$</p>
+<p>Share of RFNBO in the output: </p>
+<div class="arithmatex">\[
+Share_{RFNBO-H_2} = \frac{el_{ren}}{el_{ren} + {el}_{grid\_ely}} \approx 83\color{grey}{\%}
+\]</div>
 <p>The remainder is low-carbon fuel.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>This case study shows how averaging over shorter time scales can exclude some periods with low renewables from the RFNBO production. In other cases that are not shown here, the contrary could happen that the average over a longer period has a too high GHG intensity to qualify.</p>
