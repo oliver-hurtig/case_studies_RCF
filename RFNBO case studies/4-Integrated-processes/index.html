@@ -1220,22 +1220,22 @@
 <tr>
 <td>Amount of RFNBO hydrogen</td>
 <td style="text-align: center;"><span class="arithmatex">\({prod}_{RFNBO-H_2}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(300\ \color{grey}{GWh}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(300\ \color{grey}{GJ}\)</span></td>
 </tr>
 <tr>
 <td>Amount of LC hydrogen</td>
 <td style="text-align: center;"><span class="arithmatex">\({prod}_{LC-H_2}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(30\ \color{grey}{GWh}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(30\ \color{grey}{GJ}\)</span></td>
 </tr>
 <tr>
 <td>Hydrogen GHG intensity</td>
 <td style="text-align: center;"><span class="arithmatex">\({CI}_{H2}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(30.3\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(14\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}\)</span></td>
 </tr>
 <tr>
 <td>Relevant grid electricity used for the shift reaction</td>
 <td style="text-align: center;"><span class="arithmatex">\(el_{grid\_shift}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(80\ \color{grey}{GWh}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(80\ \color{grey}{GJ}\)</span></td>
 </tr>
 <tr>
 <td>Share of the (electric) heat energy ending up in the syngas</td>
@@ -1250,7 +1250,7 @@
 <tr>
 <td>Shift reaction grid GHG intensity</td>
 <td style="text-align: center;"><span class="arithmatex">\(CI_{grid\_shift}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(18\ \color{grey}{\left.g\,CO_2\,eq\middle/kWh_{el}\right.}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(5\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{el}\right.}\)</span></td>
 </tr>
 <tr>
 <td>Efficiency of the FT reaction</td>
@@ -1263,12 +1263,12 @@
 <h3 id="if-looking-only-at-the-shift-reaction">If looking only at the shift reaction</h3>
 <p>Energy coming out of the shift reaction: </p>
 <div class="arithmatex">\[
-{En}_{output} = \left({prod}_{RFNBO-H_2} + {prod}_{LC-H_2} \right) \times \eta_{shift} + el_{grid\_shift} \times Share_{heat\_to\_heating\_value} = 334.7\ \color{grey}{GWh}
+{En}_{output} = \left({prod}_{RFNBO-H_2} + {prod}_{LC-H_2} \right) \times \eta_{shift} + el_{grid\_shift} \times Share_{heat\_to\_heating\_value} = 334.7\ \color{grey}{GJ}
 \]</div>
 <p>This is higher than the hydrogen input, so the electricity has to be considered a relevant input.</p>
 <p>Total GHG intensity: </p>
 <div class="arithmatex">\[
-{CI}_{kerosene} = \frac{{CI}_{H2} + el_{grid\_shift}  \times CI_{grid\_shift}}{{En}_{output}  \times  \eta_{FT}} \approx 27.7\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.}
+{E}_{kerosene} = \frac{\left({prod}_{RFNBO-H_2} + {prod}_{LC-H_2} \right) \times {CI}_{H2} + el_{grid\_shift}  \times CI_{grid\_shift}}{{En}_{output}  \times  \eta_{FT}} \approx 21.4\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.}
 \]</div>
 <details class="success">
 <summary>Threshold reached</summary>
@@ -1279,11 +1279,13 @@
 Share_{RFNBO-kerosene} = \frac{{prod}_{RFNBO-H_2}}{{prod}_{RFNBO-H_2} + {prod}_{LC-H_2} + el_{grid\_shift}} \approx 73\color{grey}{\%}
 \]</div>
 <h3 id="if-looking-at-the-shift-and-ft-reaction-as-an-integrated-process">If looking at the shift and FT reaction as an integrated process</h3>
-<p>Energy coming out of the FT reaction: <span class="arithmatex">\({En}_{output} = \left({prod}_{H2} \times \eta_{shift} + el_{grid\_shift} \times Share_{heat\_to\_heating\_value} \right)  \times  \eta_{FT} = 234.3\ \color{grey}{GWh}\)</span></p>
+<p>Energy coming out of the FT reaction: 
+$${En}<em H2="H2">{output} = \left({prod}</em>
+$$} \times \eta_{shift} + el_{grid_shift} \times Share_{heat_to_heating_value} \right)  \times  \eta_{FT} = 234.3 \color{grey}{GWh</p>
 <p>This is lower than the hydrogen input, so the electricity does not have to be considered a relevant input.</p>
 <p>Total GHG intensity as before:</p>
 <div class="arithmatex">\[
-{CI}_{kerosene} \approx 27.7\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.}
+{E}_{kerosene} \approx 27.7\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.}
 \]</div>
 <details class="success">
 <summary>Threshold reached</summary>

@@ -1160,6 +1160,7 @@
 <p>Emissions can be allocated to the co-products by the economic value (according to point 15(f), because oxygen has no energy content).</p>
 <h2 id="assumptions">Assumptions</h2>
 <p>The main assumption is that the oxygen is valorized (sold) as a product. For electrolysers where the oxygen has no economic value, no emissions can be allocated to it.</p>
+<p>We assume that auxiliaries are run on grid electricity. It would of course be possible to use renewable electricity for them too.</p>
 <table>
 <thead>
 <tr>
@@ -1177,7 +1178,7 @@
 <tr>
 <td>Grid electricity for auxiliaries</td>
 <td style="text-align: center;"><span class="arithmatex">\(el_{grid\_aux}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(0.05\ \color{grey}{\left.kWh_{el}\middle/MJ_{hydrogen}\right.}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(0.05\ \color{grey}{\left.MJ_{el}\middle/MJ_{hydrogen}\right.}\)</span></td>
 </tr>
 <tr>
 <td>Economic value of RFNBO hydrogen</td>
@@ -1197,20 +1198,34 @@
 <tr>
 <td>Fully renewable electricity GHG intensity</td>
 <td style="text-align: center;"><span class="arithmatex">\(CI_{ren}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(0\ \color{grey}{\left.g\,CO_2\,eq\middle/kWh_{el}\right.}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(0\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{el}\right.}\)</span></td>
 </tr>
 <tr>
 <td>Grid GHG intensity</td>
 <td style="text-align: center;"><span class="arithmatex">\(CI_{grid}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(100\ \color{grey}{\left.g\,CO_2\,eq\middle/kWh_{el}\right.}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(50\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{el}\right.}\)</span></td>
 </tr>
 </tbody>
 </table>
 <h2 id="calculation">Calculation</h2>
-<p>Emissions attributed to hydrogen: </p>
+<p>Emissions attributed to all products: </p>
 <div class="arithmatex">\[
-E = \left(CI_{ren} \times \eta_{ely} + {CI}_{grid} \times el_{grid\_aux}\right) \times \frac{v_{hydrogen}}{v_{hydrogen} + v_{oxygen} \times r_{oh}} = 3.57\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+\begin{aligned}
+{E}_{products} &amp;= \left(e_{i,elastic} + e_{i,rigid} - e_{ex-use}\right) + e_p + e_{td} + e_u - e_{ccs}
+\\
+e_{i,rigid},\ e_{ex-use},\ e_{td},\ e_u,\ e_{ccs} &amp;&amp;= 0\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+\\
+e_{i,elastic} &amp;= CI_{ren} \times \eta_{ely} &amp;= 0\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+\\
+e_p &amp;= {CI}_{grid} \times el_{grid\_aux} &amp;= 2.5\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+\\
+E_{products} &amp;&amp;=  2.5\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+\end{aligned}
 \]</div>
+<p>Emissions attributed to hydrogen:
+$$
+E_{hydrogen} = E_{products} \times \frac{v_{hydrogen}}{v_{hydrogen} + v_{oxygen} \times r_{oh}} = 2.1 \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+$$</p>
 <details class="success">
 <summary>Threshold reached</summary>
 <p>The threshold of <span class="arithmatex">\(28.2\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}\)</span> is met. We can declare the fuel as RFNBO (or low carbon fuel).</p>

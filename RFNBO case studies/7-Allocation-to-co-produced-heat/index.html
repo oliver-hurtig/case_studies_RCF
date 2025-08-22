@@ -666,7 +666,7 @@
 
 <h1 id="7-allocation-to-co-produced-heat">7: Allocation to co-produced heat</h1>
 <ul>
-<li>How to allocate e_ex_use to co-products without carbon</li>
+<li>How to allocate e_ex_use to co-products that don't contain carbon</li>
 </ul>
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <p><svg
@@ -941,7 +941,7 @@
            dy="0"
            style="font-style:italic;font-variant:normal;font-weight:400;font-size:3.30729px;font-family:Arial;fill:#23a2bc;stroke-width:0.264583"
            id="tspan52-1">2</tspan></tspan></text></g></svg></p>
-<p>In this virtual case, the sum of all emissions that should be allocated between the product (methane) and the useful heat are is negative because of the e<span class="arithmatex">\(_{ex-use}\)</span> credit for CO<span class="arithmatex">\(_2\)</span> included in e<span class="arithmatex">\(_i\)</span>. Allocating negative emissions to heat may be undesired. The reply to question 50 of the guidance document allows for allocation according to the same rules apply as set out for biofuels in Annex V to the RED.</p>
+<p>In this virtual case, the sum of all emissions that should be allocated between the product (methane) and the useful heat is negative because of the e<span class="arithmatex">\(_{ex-use}\)</span> credit for CO<span class="arithmatex">\(_2\)</span> included in e<span class="arithmatex">\(_i\)</span>. Allocating negative emissions to heat may be undesired. The reply to question 50 of the guidance document allows for allocation according to the same rules as set out for biofuels in Annex V to the RED.</p>
 <h2 id="assumptions">Assumptions</h2>
 <table>
 <thead>
@@ -958,9 +958,14 @@
 <td style="text-align: center;"><span class="arithmatex">\(8\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{methane}\right.}\)</span></td>
 </tr>
 <tr>
+<td>GHG intensity of CO<span class="arithmatex">\(_2\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(e_{CO_2}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(1\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{methane}\right.}\)</span></td>
+</tr>
+<tr>
 <td>Ex-use for CO<span class="arithmatex">\(_2\)</span></td>
 <td style="text-align: center;"><span class="arithmatex">\(e_{ex-use}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(-10\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{methane}\right.}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(10\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{methane}\right.}\)</span></td>
 </tr>
 <tr>
 <td>Heat production efficiency</td>
@@ -975,25 +980,41 @@
 </tbody>
 </table>
 <h2 id="calculation">Calculation</h2>
-<p>GHG intensity for heat: </p>
-<p>RED II Annex V part C point 17: ...The greenhouse gas intensity of excess useful heat or excess electricity is the same as the greenhouse gas intensity of heat or electricity delivered to the fuel production process...</p>
+<p>Emissions to be allocated don't include e_u:</p>
+<div class="arithmatex">\[
+\begin{aligned}
+{E}_{products} &amp;= \left(e_{i,elastic} + e_{i,rigid} - e_{ex-use}\right) + e_p + e_{td} - e_{ccs}
+\\
+e_{i,rigid},\ e_{p},\ e_{td},\ e_{ccs} &amp;&amp;= 0\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{methane}\right.}
+\\
+e_{i,elastic} &amp;= e_{hydrogen} + e_{CO_2} &amp;= 9\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{methane}\right.}
+\\
+{E}_{products} &amp;= e_{i,elastic} - e_{ex-use} &amp;= -1\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{methane}\right.}
+\end{aligned}
+\]</div>
+<p>With normal energy allocation, this gives:
+$$
+\begin{aligned}
+{E}<em products="products">{heat}  &amp;= \frac{{E}</em>
+\
+{E}}}{1 + r_{hm}} &amp;= -0.9 \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{product}\right.<em products="products">{methane} &amp;= \frac{{E}</em>
+\end{aligned}
+$$}}{1 + r_{hm}} + e_u &amp;= 9.1 \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{product}\right.</p>
+<p>RED II Annex V part C point 17 allows: ...The greenhouse gas intensity of excess useful heat or excess electricity is the same as the greenhouse gas intensity of heat or electricity delivered to the fuel production process...</p>
 <p>The heat needed for the process comes entirely from the hydrogen, so:</p>
 <div class="arithmatex">\[
 \begin{aligned}
-{CI}_{heat} &amp;= \frac{e_{hydrogen}}{\eta_{heat}} \approx 8.1\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{useful\ heat}\right.} \\
-{CI}_{methane} &amp;= e_{hydrogen} + e_{ex-use} - {CI}_{heat} \times r_{hm} = -2.8\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{methane}\right.}
+{E}_{heat} &amp;= \frac{e_{hydrogen}}{\eta_{heat}} &amp;\approx 8.1\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{useful\ heat}\right.}
+\\
+{E}_{methane} &amp;= {E}_{products} - {E}_{heat} \times r_{hm} + e_u &amp;\approx 8.2\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{useful\ heat}\right.}
 \end{aligned}
 \]</div>
 <details class="success">
 <summary>Threshold reached for RFNBO</summary>
 <p>The threshold of <span class="arithmatex">\(28.2\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}\)</span> is met. We can declare the fuel as RFNBO (or low carbon fuel).</p>
 </details>
-<details class="tip">
-<summary>Using normal energy allocation</summary>
-<p>If we would use normal allocation, both useful heat and methane would have a negative CI of <span class="arithmatex">\(-2\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{methane}\right.}\)</span></p>
-</details>
 <h2 id="conclusion">Conclusion</h2>
-<p>Negative emissions from e_ex-use should not be allocated to products that don't contain carbon (and thus don't have combustion emissions).</p>
+<p>Negative emissions from e_ex-use should not be allocated to products that don't contain carbon (and thus don't have combustion emissions), as negative emissions don't make physical sense.</p>
 
 
 

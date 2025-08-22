@@ -1247,6 +1247,7 @@
        id="path1-9-6"
        sodipodi:nodetypes="ccccc" /></g></svg></p>
 <p>Instead of using a shift reaction to increase the H<sub>2</sub>/CO ratio in biogenic syngas, RFNBO hydrogen is added to the Fischer-Tropsch process. According to the “co-processing exception” in Annex A point 1, a distinction on a proportional basis of the energetic value of inputs shall be made.</p>
+<p>As clarified in the <a href="https://circabc.europa.eu/ui/group/8f5f9424-a7ef-4dbf-b914-1af1d12ff5d2/library/ca8efd4d-cb44-4aec-914d-3d95f95ea293/details">Q&amp;A document</a>, the process can be split using the share of RFNBO hydrogen in overall hydrogen input to determine the share of all products going into the part of the process following the RFNBO GHG methodology.</p>
 <h2 id="assumptions">Assumptions</h2>
 <table>
 <thead>
@@ -1258,9 +1259,29 @@
 </thead>
 <tbody>
 <tr>
-<td>Energy ratio of syngas to hydrogen</td>
+<td>H2:CO ratio of biogenic syngas</td>
+<td style="text-align: center;"><span class="arithmatex">\(r_{bio}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(1:1\)</span></td>
+</tr>
+<tr>
+<td>Molar ratio of biogenic syngas to RFNBO hydrogen</td>
 <td style="text-align: center;"><span class="arithmatex">\(r_{sh}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(4\ \color{grey}{\left.MJ_{syngas}\middle/MJ_{hydrogen}\right.}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(1:1\)</span></td>
+</tr>
+<tr>
+<td>(H2:CO ratio for FT reaction</td>
+<td style="text-align: center;"><span class="arithmatex">\(r_{FT}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(3:1\)</span> )</td>
+</tr>
+<tr>
+<td>Molar LHV hydrogen</td>
+<td style="text-align: center;"><span class="arithmatex">\(lhv_{H_2}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(244\ \color{grey}{\left.MJ\middle/kmol\right.}\)</span></td>
+</tr>
+<tr>
+<td>Molar LHV CO</td>
+<td style="text-align: center;"><span class="arithmatex">\(lhv_{CO}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(283\ \color{grey}{\left.MJ\middle/kmol\right.}\)</span></td>
 </tr>
 <tr>
 <td>Efficiency of the FT reaction</td>
@@ -1268,9 +1289,9 @@
 <td style="text-align: center;"><span class="arithmatex">\(70\color{grey}{\%}\)</span></td>
 </tr>
 <tr>
-<td>Fully renewable electricity GHG intensity</td>
-<td style="text-align: center;"><span class="arithmatex">\(CI_{ren}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(0\ \color{grey}{\left.g\,CO_2\,eq\middle/kWh_{el}\right.}\)</span></td>
+<td>RFNBO hydrogen GHG intensity</td>
+<td style="text-align: center;"><span class="arithmatex">\(CI_{H_2}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(5\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{el}\right.}\)</span></td>
 </tr>
 <tr>
 <td>Biogenic syngas GHG intensity</td>
@@ -1280,22 +1301,42 @@
 </tbody>
 </table>
 <h2 id="calculation">Calculation</h2>
+<p>Energy in 1 kmol of syngas: <span class="arithmatex">\(En_{syngas} =  263.5\ \color{grey}{\left.MJ\middle/kmol\right.}\)</span></p>
+<p>Energy in 1 kmol of hydrogen: <span class="arithmatex">\(En_{H_2} =  283\ \color{grey}{\left.MJ\middle/kmol\right.}\)</span></p>
+<p>Energy share of RFNBO in the inputs: <span class="arithmatex">\(s_{RFNBO} = \frac{En_{H_2}}{En_{syngas} + En_{H_2}} \approx 51.8 \color{grey}{\%}\)</span></p>
+<p>This share will be used to split the process: all RFNBO hydrogen and 51.8% of the CO will go into the process part calculated according to the RFNBO GHG methodology.</p>
+<p>To simplify the example, we assume no process emissions. <span class="arithmatex">\(e_u\)</span> determined from emission factor.</p>
 <p>Total GHG intensity:</p>
 <div class="arithmatex">\[
 \begin{aligned}
-{CI}_{RFNBO-kerosene} &amp;= \frac{CI_{ren}}{\eta_{FT}} = 0\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.} \\
-{CI}_{bio-kerosene} &amp;= \frac{CI_{bio\_syngas}}{\eta_{FT}} = \ 28.6\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.}
+{E}_{RFNBO-kerosene} &amp;= \left(e_{i,elastic} + e_{i,rigid} - e_{ex-use}\right) + e_p + e_{td} + e_u - e_{ccs}
+\\
+e_{i,rigid},\ e_p,\ e_{td},\ e_{ccs} &amp;&amp;= 0\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+\\
+e_{i,elastic} &amp;= \frac{r_{FT} \times CI_{H_2} + CI_{bio\_syngas}}{\left(r_{FT} + 1\right) \times \eta_{FT}} &amp;\approx 12.5\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.}
+\\
+e_u &amp;&amp;= 68.2\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.}
+\\
+e_{ex-use} &amp;&amp;= 68.2\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.}
+\\
+{E}_{RFNBO-kerosene} &amp;= \frac{CI_{ren}}{\eta_{FT}} &amp;= 0\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.}
+\end{aligned}
+\]</div>
+<p>Ex-use is attributed because the carbon going into the RFNBO-kerosene is not fossil (see <a href="https://circabc.europa.eu/ui/group/8f5f9424-a7ef-4dbf-b914-1af1d12ff5d2/library/ca8efd4d-cb44-4aec-914d-3d95f95ea293/details">Q&amp;A document</a>)</p>
+<div class="arithmatex">\[
+\begin{aligned}
+{E}_{bio-kerosene} &amp;= \frac{CI_{bio\_syngas}}{\eta_{FT}} = \ 28.6\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.}
 \end{aligned}
 \]</div>
 <details class="success">
 <summary>Threshold reached for RFNBO</summary>
 <p>The threshold of <span class="arithmatex">\(28.2\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}\)</span> is met. We can declare the fuel as RFNBO (or low carbon fuel). Different thresholds apply for the biofuel.</p>
 </details>
-<p>Share in the output: </p>
+<p>Share in the output (see above): </p>
 <div class="arithmatex">\[
 \begin{aligned}
-Share_{RFNBO-kerosene} &amp;= \frac{1}{1 + r_{sh}} = 20\color{grey}{\%} \\
-Share_{bio-kerosene} &amp;= \frac{r_{sh}}{1 + r_{sh}} = 80\color{grey}{\%}
+Share_{RFNBO-kerosene} &amp;= 51.8\color{grey}{\%} \\
+Share_{bio-kerosene} &amp;= 48.2\color{grey}{\%}
 \end{aligned}
 \]</div>
 <h2 id="conclusion">Conclusion</h2>

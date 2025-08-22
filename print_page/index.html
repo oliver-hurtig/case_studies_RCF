@@ -1313,6 +1313,7 @@
 <p>Emissions can be allocated to the co-products by the economic value (according to point 15(f), because oxygen has no energy content).</p>
 <h2 id="rfnbo%20case%20studies-1-co-products-assumptions">Assumptions</h2>
 <p>The main assumption is that the oxygen is valorized (sold) as a product. For electrolysers where the oxygen has no economic value, no emissions can be allocated to it.</p>
+<p>We assume that auxiliaries are run on grid electricity. It would of course be possible to use renewable electricity for them too.</p>
 <table>
 <thead>
 <tr>
@@ -1330,7 +1331,7 @@
 <tr>
 <td>Grid electricity for auxiliaries</td>
 <td style="text-align: center;"><span class="arithmatex">\(el_{grid\_aux}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(0.05\ \color{grey}{\left.kWh_{el}\middle/MJ_{hydrogen}\right.}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(0.05\ \color{grey}{\left.MJ_{el}\middle/MJ_{hydrogen}\right.}\)</span></td>
 </tr>
 <tr>
 <td>Economic value of RFNBO hydrogen</td>
@@ -1350,20 +1351,34 @@
 <tr>
 <td>Fully renewable electricity GHG intensity</td>
 <td style="text-align: center;"><span class="arithmatex">\(CI_{ren}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(0\ \color{grey}{\left.g\,CO_2\,eq\middle/kWh_{el}\right.}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(0\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{el}\right.}\)</span></td>
 </tr>
 <tr>
 <td>Grid GHG intensity</td>
 <td style="text-align: center;"><span class="arithmatex">\(CI_{grid}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(100\ \color{grey}{\left.g\,CO_2\,eq\middle/kWh_{el}\right.}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(50\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{el}\right.}\)</span></td>
 </tr>
 </tbody>
 </table>
 <h2 id="rfnbo%20case%20studies-1-co-products-calculation">Calculation</h2>
-<p>Emissions attributed to hydrogen: </p>
+<p>Emissions attributed to all products: </p>
 <div class="arithmatex">\[
-E = \left(CI_{ren} \times \eta_{ely} + {CI}_{grid} \times el_{grid\_aux}\right) \times \frac{v_{hydrogen}}{v_{hydrogen} + v_{oxygen} \times r_{oh}} = 3.57\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+\begin{aligned}
+{E}_{products} &amp;= \left(e_{i,elastic} + e_{i,rigid} - e_{ex-use}\right) + e_p + e_{td} + e_u - e_{ccs}
+\\
+e_{i,rigid},\ e_{ex-use},\ e_{td},\ e_u,\ e_{ccs} &amp;&amp;= 0\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+\\
+e_{i,elastic} &amp;= CI_{ren} \times \eta_{ely} &amp;= 0\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+\\
+e_p &amp;= {CI}_{grid} \times el_{grid\_aux} &amp;= 2.5\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+\\
+E_{products} &amp;&amp;=  2.5\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+\end{aligned}
 \]</div>
+<p>Emissions attributed to hydrogen:
+$$
+E_{hydrogen} = E_{products} \times \frac{v_{hydrogen}}{v_{hydrogen} + v_{oxygen} \times r_{oh}} = 2.1 \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+$$</p>
 <details class="success">
 <summary>Threshold reached</summary>
 <p>The threshold of <span class="arithmatex">\(28.2\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}\)</span> is met. We can declare the fuel as RFNBO (or low carbon fuel).</p>
@@ -1936,7 +1951,7 @@ E = \left(CI_{ren} \times \eta_{ely} + {CI}_{grid} \times el_{grid\_aux}\right) 
          style="fill:#7a55d4;fill-opacity:1;stroke-width:0.264583"><tspan
            style="font-style:italic;font-variant:normal;font-weight:400;font-size:3.30729px;font-family:Arial;fill:#7a55d4;fill-opacity:1;stroke-width:0.264583"
            id="tspan52-8-7" /></tspan></text></g></svg></p>
-<p>Electrolyser running at 764 MW with fully renewable, directly connected electricity, complemented by grid electricity. Oxygen is vented.</p>
+<p>Electrolyser running at 27.8 MW (100 GJ/h) with fully renewable, directly connected electricity, complemented by grid electricity. Oxygen is vented.</p>
 <p>This case study shows that until 2030, it is possible to choose between monthly averaging or hourly averaging. As an example, we show an example of both. We pick one hour with particularly low renewables to exemplify how the calculation has to be done.</p>
 <h2 id="rfnbo%20case%20studies-2-time-averaging-assumptions">Assumptions</h2>
 <table>
@@ -1958,41 +1973,54 @@ E = \left(CI_{ren} \times \eta_{ely} + {CI}_{grid} \times el_{grid\_aux}\right) 
 <tr>
 <td>Relevant renewable electricity used</td>
 <td><span class="arithmatex">\(el_{ren}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(500\ \color{grey}{GWh}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(264\ \color{grey}{MWh}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(60\ \color{grey}{TJ}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(40\ \color{grey}{GJ}\)</span></td>
 </tr>
 <tr>
 <td>Relevant grid electricity used</td>
 <td><span class="arithmatex">\(el_{grid\_ely}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(50\ \color{grey}{GWh}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(500\ \color{grey}{MWh}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(12\ \color{grey}{TJ}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(60\ \color{grey}{GJ}\)</span></td>
 </tr>
 <tr>
 <td>Grid electricity for auxiliaries</td>
 <td><span class="arithmatex">\(el_{grid\_aux}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(0.5\ \color{grey}{GWh}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(0.7\ \color{grey}{MWh}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(3.6\ \color{grey}{TJ}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(5\ \color{grey}{GJ}\)</span></td>
 </tr>
 <tr>
 <td>Fully renewable electricity GHG intensity</td>
 <td><span class="arithmatex">\(CI_{ren}\)</span></td>
-<td colspan="2" style="text-align: center;"><span class="arithmatex">\(0\ \color{grey}{\left.g\,CO_2\,eq\middle/kWh_{el}\right.}\)</span></td>
+<td colspan="2" style="text-align: center;"><span class="arithmatex">\(0\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{el}\right.}\)</span></td>
 <td style="text-align: center;"></td>
 </tr>
 <tr>
 <td>Grid GHG intensity</td>
 <td><span class="arithmatex">\(CI_{grid}\)</span></td>
-<td colspan="2" style="text-align: center;"><span class="arithmatex">\(100\ \color{grey}{\left.g\,CO_2\,eq\middle/kWh_{el}\right.}\)</span></td>
+<td colspan="2" style="text-align: center;"><span class="arithmatex">\(50\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{el}\right.}\)</span></td>
 <td style="text-align: center;"></td>
 </tr>
 </tbody>
 </table>
 <h2 id="rfnbo%20case%20studies-2-time-averaging-calculation">Calculation</h2>
 <h3 id="rfnbo%20case%20studies-2-time-averaging-hourly-averaging-low-renewables">Hourly averaging, low renewables</h3>
-<p>Amount of hydrogen produced: <span class="arithmatex">\({prod}_{H2} = \left(el_{ren} + {el}_{grid\_ely} \right)  \times  \eta_{ely} \approx 1\,650\ \color{grey}{GJ}\)</span></p>
+<p>Amount of hydrogen produced: 
+$$
+{prod}<em ren="ren">{H2} = \left(el</em>} + {el<em ely="ely">{grid_ely} \right)  \times  \eta</em>
+$$} \approx 60 \color{grey}{GJ</p>
 <p>Total GHG intensity:</p>
 <div class="arithmatex">\[
-{CI}_{H2} = \frac{\left( {el}_{grid\_ely} + el_{grid\_aux} \right)  \times  CI_{grid}}{{prod}_{H2}} \approx 30.3\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+\begin{aligned}
+{E}_{H_2} &amp;= (e_{i,elastic} + e_{i,rigid} - e_{ex-use}) + e_p + e_{td} + e_u - e_{ccs}
+\\
+e_{i,rigid},\ e_{ex-use},\ e_{td},\ e_u,\ e_{ccs} &amp;&amp;= 0\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+\\
+e_{i,elastic} &amp;= \frac{{el}_{grid\_ely}  \times  CI_{grid}}{{prod}_{H2}} &amp;\approx 50\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+\\
+e_p &amp;= \frac{el_{grid\_aux} \times  CI_{grid}}{{prod}_{H2}} &amp;\approx 4.2\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+\\
+{E}_{H2} &amp;&amp;\approx 54.2\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+\end{aligned}
 \]</div>
 <details class="failure">
 <summary>Threshold not reached</summary>
@@ -2004,16 +2032,22 @@ E = \left(CI_{ren} \times \eta_{ely} + {CI}_{grid} \times el_{grid\_aux}\right) 
 <p>This example should not imply that hourly averaging is bad. In other hours, the share of renewables is higher than the average, and a higher share of the production can be declared as RFNBO. In many cases, monthly averaging might not reach the threshold, and the whole monthly production could not be declared as RFNBO.</p>
 </details>
 <h3 id="rfnbo%20case%20studies-2-time-averaging-monthly-averaging">Monthly averaging</h3>
-<p>Amount of hydrogen produced: <span class="arithmatex">\({prod}_{H2} = \left(el_{ren} + {el}_{grid\_ely} \right)  \times  \eta_{ely} \approx 1\,980\,000\ \color{grey}{GJ}\)</span></p>
+<p>Amount of hydrogen produced:
+$$
+{prod}<em ren="ren">{H2} = \left(el</em>} + {el<em ely="ely">{grid_ely} \right)  \times  \eta</em>
+$$} \approx 43.2 \color{grey}{TJ</p>
 <p>Total GHG intensity:</p>
 <div class="arithmatex">\[
-{CI}_{H2} = \frac{\left( {el}_{grid\_ ely} + el_{grid\_aux} \right)  \times  CI_{grid}}{{prod}_{H2}} \approx 4.3\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+{E}_{H2} = \frac{\left( {el}_{grid\_ ely} + el_{grid\_aux} \right)  \times  CI_{grid}}{{prod}_{H2}} \approx 18.1\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
 \]</div>
 <details class="success">
 <summary>Threshold reached</summary>
 <p>The threshold of <span class="arithmatex">\(28.2\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}\)</span> is met. We can declare the fuel as RFNBO (or low carbon fuel).</p>
 </details>
-<p>Share of RFNBO in the output: <span class="arithmatex">\(Share_{RFNBO-H_2} = \frac{el_{ren}}{el_{ren} + {el}_{grid\_ely}} \approx 91\color{grey}{\%}\)</span></p>
+<p>Share of RFNBO in the output: 
+$$
+Share_{RFNBO-H_2} = \frac{el_{ren}}{el_{ren} + {el}_{grid_ely}} \approx 83\color{grey}{\%}
+$$</p>
 <p>The remainder is low-carbon fuel.</p>
 <h2 id="rfnbo%20case%20studies-2-time-averaging-conclusion">Conclusion</h2>
 <p>This case study shows how averaging over shorter time scales can exclude some periods with low renewables from the RFNBO production. In other cases that are not shown here, the contrary could happen that the average over a longer period has a too high GHG intensity to qualify.</p></section><section class="print-page" id="rfnbo%20case%20studies-3-relevant-inputs" heading-number="2.3"><h1 id="rfnbo%20case%20studies-3-relevant-inputs-3-relevant-inputs">3: Relevant inputs</h1>
@@ -2376,7 +2410,7 @@ E = \left(CI_{ren} \times \eta_{ely} + {CI}_{grid} \times el_{grid\_aux}\right) 
          stroke-width="2"
          d="M 44.197,66 H 53 V 55 A 8,8 0 0 0 38.813,49.93"
          id="path9-8" /></g></g></a></svg></p>
-<p>Cracking Ammonia is endothermic, the heat can be supplied electrically or by burning part of the ammonia. Here we assume that the energy is supplied electrically.</p>
+<p>Cracking Ammonia is endothermic, the heat can be supplied externally or by burning part of the ammonia. Here we assume that the energy is supplied electrically.</p>
 <h2 id="rfnbo%20case%20studies-3-relevant-inputs-assumptions">Assumptions</h2>
 <details class="tip">
 <summary>Transports</summary>
@@ -2407,9 +2441,14 @@ E = \left(CI_{ren} \times \eta_{ely} + {CI}_{grid} \times el_{grid\_aux}\right) 
 <td style="text-align: center;"><span class="arithmatex">\(0.75\ \color{grey}{\left.MJ_{el}\middle/MJ_{{NH}_3}\right.}\)</span></td>
 </tr>
 <tr>
-<td>Electricity demand for heat, cracking process</td>
-<td style="text-align: center;"><span class="arithmatex">\(el_{grid\_cracking}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(0.3\ \color{grey}{\left.MJ_{el}\middle/MJ_{H_2}\right.}\)</span></td>
+<td>Heat demand, cracking process</td>
+<td style="text-align: center;"><span class="arithmatex">\(heat_{cracking}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(0.05\ \color{grey}{\left.MJ\middle/MJ_{H_2}\right.}\)</span></td>
+</tr>
+<tr>
+<td>Heat efficiency</td>
+<td style="text-align: center;"><span class="arithmatex">\(\eta_{heat}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(95\ \color{grey}{\%}\)</span></td>
 </tr>
 <tr>
 <td>Hydrogen GHG intensity</td>
@@ -2419,7 +2458,7 @@ E = \left(CI_{ren} \times \eta_{ely} + {CI}_{grid} \times el_{grid\_aux}\right) 
 <tr>
 <td>Grid GHG intensity</td>
 <td style="text-align: center;"><span class="arithmatex">\(CI_{grid}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(100\ \color{grey}{\left.g\,CO_2\,eq\middle/kWh_{el}\right.}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(25\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{el}\right.}\)</span></td>
 </tr>
 </tbody>
 </table>
@@ -2427,7 +2466,17 @@ E = \left(CI_{ren} \times \eta_{ely} + {CI}_{grid} \times el_{grid\_aux}\right) 
 <h2 id="rfnbo%20case%20studies-3-relevant-inputs-calculation">Calculation</h2>
 <p>Total GHG intensity:</p>
 <div class="arithmatex">\[
-{CI}_{H_2} = \left( {ammonia}_{input} \times el_{grid\_Haber} + el_{grid\_cracking} \right) \times CI_{grid} + {hydrogen}_{input} \times CI_{H_2} \approx 26.7\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+\begin{aligned}
+{E}_{H_2} &amp;= (e_{i,elastic} + e_{i,rigid} - e_{ex-use}) + e_p + e_{td} + e_u - e_{ccs}
+\\
+e_{i,rigid},\ e_{ex-use},\ e_p,\ e_{td},\ e_u,\ e_{ccs} &amp;&amp;= 0\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+\\
+e_{i,elastic,ammonia} &amp;= {ammonia}_{input} \times \left(el_{grid\_Haber}  \times CI_{grid} + {hydrogen}_{input} \times CI_{H_2} \right) &amp;\approx 16.5\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+\\
+e_{i,elastic,heat} &amp;= \frac{heat_{cracking} \times CI_{grid}}{\eta_{heat}} &amp;\approx 1.3\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+\\
+{E}_{H_2} &amp;= e_{i,elastic,ammonia} + e_{i,elastic,heat} &amp;\approx 17.8\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+\end{aligned}
 \]</div>
 <details class="success">
 <summary>Threshold reached</summary>
@@ -2435,11 +2484,12 @@ E = \left(CI_{ren} \times \eta_{ely} + {CI}_{grid} \times el_{grid\_aux}\right) 
 </details>
 <p>Share of RFNBO in the output is </p>
 <div class="arithmatex">\[
-Share_{RFNBO-H_{2}} = \frac{{ammonia}_{input}}{{ammonia}_{input} + el_{grid\_cracking}} \approx 75\color{grey}{\%}
+Share_{RFNBO-H_{2}} = \frac{{ammonia}_{input}}{{ammonia}_{input} + heat_{cracking}} \approx 95\color{grey}{\%}
 \]</div>
 <p>The remainder is low-carbon fuel.</p>
 <h2 id="rfnbo%20case%20studies-3-relevant-inputs-conclusion">Conclusion</h2>
-<p>This case study shows that some transport processes that need energy to split the transported product at destination might need to consider the energy needed for the split as relevant energy. If this energy is not fully renewable, the share of RFNBO will decrease.</p></section><section class="print-page" id="rfnbo%20case%20studies-4-integrated-processes" heading-number="2.4"><h1 id="rfnbo%20case%20studies-4-integrated-processes-4-integrated-processes">4: Integrated processes</h1>
+<p>This case study shows that some transport processes that need energy to split the transported product at destination might need to consider the energy needed for the split as relevant energy. If this energy is not fully renewable, the share of RFNBO will decrease.</p>
+<p>One way to increase RFNBO share and lower the emissions is to use a part of the RFNBO ammonia to power the cracking process.</p></section><section class="print-page" id="rfnbo%20case%20studies-4-integrated-processes" heading-number="2.4"><h1 id="rfnbo%20case%20studies-4-integrated-processes-4-integrated-processes">4: Integrated processes</h1>
 <ul>
 <li>How to count different integrated processes together</li>
 </ul>
@@ -2931,22 +2981,22 @@ Share_{RFNBO-H_{2}} = \frac{{ammonia}_{input}}{{ammonia}_{input} + el_{grid\_cra
 <tr>
 <td>Amount of RFNBO hydrogen</td>
 <td style="text-align: center;"><span class="arithmatex">\({prod}_{RFNBO-H_2}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(300\ \color{grey}{GWh}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(300\ \color{grey}{GJ}\)</span></td>
 </tr>
 <tr>
 <td>Amount of LC hydrogen</td>
 <td style="text-align: center;"><span class="arithmatex">\({prod}_{LC-H_2}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(30\ \color{grey}{GWh}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(30\ \color{grey}{GJ}\)</span></td>
 </tr>
 <tr>
 <td>Hydrogen GHG intensity</td>
 <td style="text-align: center;"><span class="arithmatex">\({CI}_{H2}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(30.3\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(14\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}\)</span></td>
 </tr>
 <tr>
 <td>Relevant grid electricity used for the shift reaction</td>
 <td style="text-align: center;"><span class="arithmatex">\(el_{grid\_shift}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(80\ \color{grey}{GWh}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(80\ \color{grey}{GJ}\)</span></td>
 </tr>
 <tr>
 <td>Share of the (electric) heat energy ending up in the syngas</td>
@@ -2961,7 +3011,7 @@ Share_{RFNBO-H_{2}} = \frac{{ammonia}_{input}}{{ammonia}_{input} + el_{grid\_cra
 <tr>
 <td>Shift reaction grid GHG intensity</td>
 <td style="text-align: center;"><span class="arithmatex">\(CI_{grid\_shift}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(18\ \color{grey}{\left.g\,CO_2\,eq\middle/kWh_{el}\right.}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(5\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{el}\right.}\)</span></td>
 </tr>
 <tr>
 <td>Efficiency of the FT reaction</td>
@@ -2974,12 +3024,12 @@ Share_{RFNBO-H_{2}} = \frac{{ammonia}_{input}}{{ammonia}_{input} + el_{grid\_cra
 <h3 id="rfnbo%20case%20studies-4-integrated-processes-if-looking-only-at-the-shift-reaction">If looking only at the shift reaction</h3>
 <p>Energy coming out of the shift reaction: </p>
 <div class="arithmatex">\[
-{En}_{output} = \left({prod}_{RFNBO-H_2} + {prod}_{LC-H_2} \right) \times \eta_{shift} + el_{grid\_shift} \times Share_{heat\_to\_heating\_value} = 334.7\ \color{grey}{GWh}
+{En}_{output} = \left({prod}_{RFNBO-H_2} + {prod}_{LC-H_2} \right) \times \eta_{shift} + el_{grid\_shift} \times Share_{heat\_to\_heating\_value} = 334.7\ \color{grey}{GJ}
 \]</div>
 <p>This is higher than the hydrogen input, so the electricity has to be considered a relevant input.</p>
 <p>Total GHG intensity: </p>
 <div class="arithmatex">\[
-{CI}_{kerosene} = \frac{{CI}_{H2} + el_{grid\_shift}  \times CI_{grid\_shift}}{{En}_{output}  \times  \eta_{FT}} \approx 27.7\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.}
+{E}_{kerosene} = \frac{\left({prod}_{RFNBO-H_2} + {prod}_{LC-H_2} \right) \times {CI}_{H2} + el_{grid\_shift}  \times CI_{grid\_shift}}{{En}_{output}  \times  \eta_{FT}} \approx 21.4\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.}
 \]</div>
 <details class="success">
 <summary>Threshold reached</summary>
@@ -2990,11 +3040,13 @@ Share_{RFNBO-H_{2}} = \frac{{ammonia}_{input}}{{ammonia}_{input} + el_{grid\_cra
 Share_{RFNBO-kerosene} = \frac{{prod}_{RFNBO-H_2}}{{prod}_{RFNBO-H_2} + {prod}_{LC-H_2} + el_{grid\_shift}} \approx 73\color{grey}{\%}
 \]</div>
 <h3 id="rfnbo%20case%20studies-4-integrated-processes-if-looking-at-the-shift-and-ft-reaction-as-an-integrated-process">If looking at the shift and FT reaction as an integrated process</h3>
-<p>Energy coming out of the FT reaction: <span class="arithmatex">\({En}_{output} = \left({prod}_{H2} \times \eta_{shift} + el_{grid\_shift} \times Share_{heat\_to\_heating\_value} \right)  \times  \eta_{FT} = 234.3\ \color{grey}{GWh}\)</span></p>
+<p>Energy coming out of the FT reaction: 
+$${En}<em H2="H2">{output} = \left({prod}</em>
+$$} \times \eta_{shift} + el_{grid_shift} \times Share_{heat_to_heating_value} \right)  \times  \eta_{FT} = 234.3 \color{grey}{GWh</p>
 <p>This is lower than the hydrogen input, so the electricity does not have to be considered a relevant input.</p>
 <p>Total GHG intensity as before:</p>
 <div class="arithmatex">\[
-{CI}_{kerosene} \approx 27.7\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.}
+{E}_{kerosene} \approx 27.7\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.}
 \]</div>
 <details class="success">
 <summary>Threshold reached</summary>
@@ -3588,6 +3640,7 @@ Share_{RFNBO- H2} = \frac{{prod}_{RFNBO-H_2}}{{prod}_{RFNBO-H_2} + {prod}_{LC-H_
        id="path1-9-6"
        sodipodi:nodetypes="ccccc" /></g></svg></p>
 <p>Instead of using a shift reaction to increase the H<sub>2</sub>/CO ratio in biogenic syngas, RFNBO hydrogen is added to the Fischer-Tropsch process. According to the “co-processing exception” in Annex A point 1, a distinction on a proportional basis of the energetic value of inputs shall be made.</p>
+<p>As clarified in the <a href="https://circabc.europa.eu/ui/group/8f5f9424-a7ef-4dbf-b914-1af1d12ff5d2/library/ca8efd4d-cb44-4aec-914d-3d95f95ea293/details">Q&amp;A document</a>, the process can be split using the share of RFNBO hydrogen in overall hydrogen input to determine the share of all products going into the part of the process following the RFNBO GHG methodology.</p>
 <h2 id="rfnbo%20case%20studies-5-biofuels-and-rfnbo-co-production-assumptions">Assumptions</h2>
 <table>
 <thead>
@@ -3599,9 +3652,29 @@ Share_{RFNBO- H2} = \frac{{prod}_{RFNBO-H_2}}{{prod}_{RFNBO-H_2} + {prod}_{LC-H_
 </thead>
 <tbody>
 <tr>
-<td>Energy ratio of syngas to hydrogen</td>
+<td>H2:CO ratio of biogenic syngas</td>
+<td style="text-align: center;"><span class="arithmatex">\(r_{bio}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(1:1\)</span></td>
+</tr>
+<tr>
+<td>Molar ratio of biogenic syngas to RFNBO hydrogen</td>
 <td style="text-align: center;"><span class="arithmatex">\(r_{sh}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(4\ \color{grey}{\left.MJ_{syngas}\middle/MJ_{hydrogen}\right.}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(1:1\)</span></td>
+</tr>
+<tr>
+<td>(H2:CO ratio for FT reaction</td>
+<td style="text-align: center;"><span class="arithmatex">\(r_{FT}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(3:1\)</span> )</td>
+</tr>
+<tr>
+<td>Molar LHV hydrogen</td>
+<td style="text-align: center;"><span class="arithmatex">\(lhv_{H_2}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(244\ \color{grey}{\left.MJ\middle/kmol\right.}\)</span></td>
+</tr>
+<tr>
+<td>Molar LHV CO</td>
+<td style="text-align: center;"><span class="arithmatex">\(lhv_{CO}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(283\ \color{grey}{\left.MJ\middle/kmol\right.}\)</span></td>
 </tr>
 <tr>
 <td>Efficiency of the FT reaction</td>
@@ -3609,9 +3682,9 @@ Share_{RFNBO- H2} = \frac{{prod}_{RFNBO-H_2}}{{prod}_{RFNBO-H_2} + {prod}_{LC-H_
 <td style="text-align: center;"><span class="arithmatex">\(70\color{grey}{\%}\)</span></td>
 </tr>
 <tr>
-<td>Fully renewable electricity GHG intensity</td>
-<td style="text-align: center;"><span class="arithmatex">\(CI_{ren}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(0\ \color{grey}{\left.g\,CO_2\,eq\middle/kWh_{el}\right.}\)</span></td>
+<td>RFNBO hydrogen GHG intensity</td>
+<td style="text-align: center;"><span class="arithmatex">\(CI_{H_2}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(5\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{el}\right.}\)</span></td>
 </tr>
 <tr>
 <td>Biogenic syngas GHG intensity</td>
@@ -3621,22 +3694,42 @@ Share_{RFNBO- H2} = \frac{{prod}_{RFNBO-H_2}}{{prod}_{RFNBO-H_2} + {prod}_{LC-H_
 </tbody>
 </table>
 <h2 id="rfnbo%20case%20studies-5-biofuels-and-rfnbo-co-production-calculation">Calculation</h2>
+<p>Energy in 1 kmol of syngas: <span class="arithmatex">\(En_{syngas} =  263.5\ \color{grey}{\left.MJ\middle/kmol\right.}\)</span></p>
+<p>Energy in 1 kmol of hydrogen: <span class="arithmatex">\(En_{H_2} =  283\ \color{grey}{\left.MJ\middle/kmol\right.}\)</span></p>
+<p>Energy share of RFNBO in the inputs: <span class="arithmatex">\(s_{RFNBO} = \frac{En_{H_2}}{En_{syngas} + En_{H_2}} \approx 51.8 \color{grey}{\%}\)</span></p>
+<p>This share will be used to split the process: all RFNBO hydrogen and 51.8% of the CO will go into the process part calculated according to the RFNBO GHG methodology.</p>
+<p>To simplify the example, we assume no process emissions. <span class="arithmatex">\(e_u\)</span> determined from emission factor.</p>
 <p>Total GHG intensity:</p>
 <div class="arithmatex">\[
 \begin{aligned}
-{CI}_{RFNBO-kerosene} &amp;= \frac{CI_{ren}}{\eta_{FT}} = 0\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.} \\
-{CI}_{bio-kerosene} &amp;= \frac{CI_{bio\_syngas}}{\eta_{FT}} = \ 28.6\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.}
+{E}_{RFNBO-kerosene} &amp;= \left(e_{i,elastic} + e_{i,rigid} - e_{ex-use}\right) + e_p + e_{td} + e_u - e_{ccs}
+\\
+e_{i,rigid},\ e_p,\ e_{td},\ e_{ccs} &amp;&amp;= 0\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+\\
+e_{i,elastic} &amp;= \frac{r_{FT} \times CI_{H_2} + CI_{bio\_syngas}}{\left(r_{FT} + 1\right) \times \eta_{FT}} &amp;\approx 12.5\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.}
+\\
+e_u &amp;&amp;= 68.2\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.}
+\\
+e_{ex-use} &amp;&amp;= 68.2\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.}
+\\
+{E}_{RFNBO-kerosene} &amp;= \frac{CI_{ren}}{\eta_{FT}} &amp;= 0\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.}
+\end{aligned}
+\]</div>
+<p>Ex-use is attributed because the carbon going into the RFNBO-kerosene is not fossil (see <a href="https://circabc.europa.eu/ui/group/8f5f9424-a7ef-4dbf-b914-1af1d12ff5d2/library/ca8efd4d-cb44-4aec-914d-3d95f95ea293/details">Q&amp;A document</a>)</p>
+<div class="arithmatex">\[
+\begin{aligned}
+{E}_{bio-kerosene} &amp;= \frac{CI_{bio\_syngas}}{\eta_{FT}} = \ 28.6\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.}
 \end{aligned}
 \]</div>
 <details class="success">
 <summary>Threshold reached for RFNBO</summary>
 <p>The threshold of <span class="arithmatex">\(28.2\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}\)</span> is met. We can declare the fuel as RFNBO (or low carbon fuel). Different thresholds apply for the biofuel.</p>
 </details>
-<p>Share in the output: </p>
+<p>Share in the output (see above): </p>
 <div class="arithmatex">\[
 \begin{aligned}
-Share_{RFNBO-kerosene} &amp;= \frac{1}{1 + r_{sh}} = 20\color{grey}{\%} \\
-Share_{bio-kerosene} &amp;= \frac{r_{sh}}{1 + r_{sh}} = 80\color{grey}{\%}
+Share_{RFNBO-kerosene} &amp;= 51.8\color{grey}{\%} \\
+Share_{bio-kerosene} &amp;= 48.2\color{grey}{\%}
 \end{aligned}
 \]</div>
 <h2 id="rfnbo%20case%20studies-5-biofuels-and-rfnbo-co-production-conclusion">Conclusion</h2>
@@ -4133,7 +4226,7 @@ Share_{bio-kerosene} &amp;= \frac{r_{sh}}{1 + r_{sh}} = 80\color{grey}{\%}
 <tr>
 <td>Fully renewable electricity GHG intensity</td>
 <td style="text-align: center;"><span class="arithmatex">\(CI_{ren}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(0\ \color{grey}{\left.g\,CO_2\,eq\middle/kWh_{el}\right.}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(0\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{el}\right.}\)</span></td>
 </tr>
 <tr>
 <td>Fossil syngas GHG intensity</td>
@@ -4146,8 +4239,8 @@ Share_{bio-kerosene} &amp;= \frac{r_{sh}}{1 + r_{sh}} = 80\color{grey}{\%}
 <p>Total GHG intensity: </p>
 <div class="arithmatex">\[
 \begin{aligned}
-{CI}_{RFNBO-kerosene} &amp;= 0\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.} \\
-{CI}_{fossil-kerosene} &amp;= \frac{CI_{syngas}}{\eta_{FT}} = 171.4\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.}
+{E}_{RFNBO-kerosene} &amp;= 0\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.} \\
+{E}_{fossil-kerosene} &amp;= \frac{CI_{syngas}}{\eta_{FT}} = 171.4\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.}
 \end{aligned}
 \]</div>
 <details class="success">
@@ -4158,7 +4251,7 @@ Share_{bio-kerosene} &amp;= \frac{r_{sh}}{1 + r_{sh}} = 80\color{grey}{\%}
 <h2 id="rfnbo%20case%20studies-6-partly-replacing-fossil-inputs-conclusion">Conclusion</h2>
 <p>Even if the fossil part doesn’t respect the 70% GHG reduction, the energetic share of RFNBO in the inputs can still be virtually split from the process and the corresponding output can be declared as RFNBO.</p></section><section class="print-page" id="rfnbo%20case%20studies-7-allocation-to-co-produced-heat" heading-number="2.7"><h1 id="rfnbo%20case%20studies-7-allocation-to-co-produced-heat-7-allocation-to-co-produced-heat">7: Allocation to co-produced heat</h1>
 <ul>
-<li>How to allocate e_ex_use to co-products without carbon</li>
+<li>How to allocate e_ex_use to co-products that don't contain carbon</li>
 </ul>
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <p><svg
@@ -4433,7 +4526,7 @@ Share_{bio-kerosene} &amp;= \frac{r_{sh}}{1 + r_{sh}} = 80\color{grey}{\%}
            dy="0"
            style="font-style:italic;font-variant:normal;font-weight:400;font-size:3.30729px;font-family:Arial;fill:#23a2bc;stroke-width:0.264583"
            id="tspan52-1">2</tspan></tspan></text></g></svg></p>
-<p>In this virtual case, the sum of all emissions that should be allocated between the product (methane) and the useful heat are is negative because of the e<span class="arithmatex">\(_{ex-use}\)</span> credit for CO<span class="arithmatex">\(_2\)</span> included in e<span class="arithmatex">\(_i\)</span>. Allocating negative emissions to heat may be undesired. The reply to question 50 of the guidance document allows for allocation according to the same rules apply as set out for biofuels in Annex V to the RED.</p>
+<p>In this virtual case, the sum of all emissions that should be allocated between the product (methane) and the useful heat is negative because of the e<span class="arithmatex">\(_{ex-use}\)</span> credit for CO<span class="arithmatex">\(_2\)</span> included in e<span class="arithmatex">\(_i\)</span>. Allocating negative emissions to heat may be undesired. The reply to question 50 of the guidance document allows for allocation according to the same rules as set out for biofuels in Annex V to the RED.</p>
 <h2 id="rfnbo%20case%20studies-7-allocation-to-co-produced-heat-assumptions">Assumptions</h2>
 <table>
 <thead>
@@ -4450,9 +4543,14 @@ Share_{bio-kerosene} &amp;= \frac{r_{sh}}{1 + r_{sh}} = 80\color{grey}{\%}
 <td style="text-align: center;"><span class="arithmatex">\(8\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{methane}\right.}\)</span></td>
 </tr>
 <tr>
+<td>GHG intensity of CO<span class="arithmatex">\(_2\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(e_{CO_2}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(1\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{methane}\right.}\)</span></td>
+</tr>
+<tr>
 <td>Ex-use for CO<span class="arithmatex">\(_2\)</span></td>
 <td style="text-align: center;"><span class="arithmatex">\(e_{ex-use}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(-10\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{methane}\right.}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(10\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{methane}\right.}\)</span></td>
 </tr>
 <tr>
 <td>Heat production efficiency</td>
@@ -4467,25 +4565,41 @@ Share_{bio-kerosene} &amp;= \frac{r_{sh}}{1 + r_{sh}} = 80\color{grey}{\%}
 </tbody>
 </table>
 <h2 id="rfnbo%20case%20studies-7-allocation-to-co-produced-heat-calculation">Calculation</h2>
-<p>GHG intensity for heat: </p>
-<p>RED II Annex V part C point 17: ...The greenhouse gas intensity of excess useful heat or excess electricity is the same as the greenhouse gas intensity of heat or electricity delivered to the fuel production process...</p>
+<p>Emissions to be allocated don't include e_u:</p>
+<div class="arithmatex">\[
+\begin{aligned}
+{E}_{products} &amp;= \left(e_{i,elastic} + e_{i,rigid} - e_{ex-use}\right) + e_p + e_{td} - e_{ccs}
+\\
+e_{i,rigid},\ e_{p},\ e_{td},\ e_{ccs} &amp;&amp;= 0\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{methane}\right.}
+\\
+e_{i,elastic} &amp;= e_{hydrogen} + e_{CO_2} &amp;= 9\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{methane}\right.}
+\\
+{E}_{products} &amp;= e_{i,elastic} - e_{ex-use} &amp;= -1\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{methane}\right.}
+\end{aligned}
+\]</div>
+<p>With normal energy allocation, this gives:
+$$
+\begin{aligned}
+{E}<em products="products">{heat}  &amp;= \frac{{E}</em>
+\
+{E}}}{1 + r_{hm}} &amp;= -0.9 \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{product}\right.<em products="products">{methane} &amp;= \frac{{E}</em>
+\end{aligned}
+$$}}{1 + r_{hm}} + e_u &amp;= 9.1 \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{product}\right.</p>
+<p>RED II Annex V part C point 17 allows: ...The greenhouse gas intensity of excess useful heat or excess electricity is the same as the greenhouse gas intensity of heat or electricity delivered to the fuel production process...</p>
 <p>The heat needed for the process comes entirely from the hydrogen, so:</p>
 <div class="arithmatex">\[
 \begin{aligned}
-{CI}_{heat} &amp;= \frac{e_{hydrogen}}{\eta_{heat}} \approx 8.1\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{useful\ heat}\right.} \\
-{CI}_{methane} &amp;= e_{hydrogen} + e_{ex-use} - {CI}_{heat} \times r_{hm} = -2.8\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{methane}\right.}
+{E}_{heat} &amp;= \frac{e_{hydrogen}}{\eta_{heat}} &amp;\approx 8.1\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{useful\ heat}\right.}
+\\
+{E}_{methane} &amp;= {E}_{products} - {E}_{heat} \times r_{hm} + e_u &amp;\approx 8.2\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{useful\ heat}\right.}
 \end{aligned}
 \]</div>
 <details class="success">
 <summary>Threshold reached for RFNBO</summary>
 <p>The threshold of <span class="arithmatex">\(28.2\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}\)</span> is met. We can declare the fuel as RFNBO (or low carbon fuel).</p>
 </details>
-<details class="tip">
-<summary>Using normal energy allocation</summary>
-<p>If we would use normal allocation, both useful heat and methane would have a negative CI of <span class="arithmatex">\(-2\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{methane}\right.}\)</span></p>
-</details>
 <h2 id="rfnbo%20case%20studies-7-allocation-to-co-produced-heat-conclusion">Conclusion</h2>
-<p>Negative emissions from e_ex-use should not be allocated to products that don't contain carbon (and thus don't have combustion emissions).</p></section><section class="print-page" id="rfnbo%20case%20studies-8-full-example" heading-number="2.8"><h1 id="rfnbo%20case%20studies-8-full-example-8-full-example">8: Full example</h1>
+<p>Negative emissions from e_ex-use should not be allocated to products that don't contain carbon (and thus don't have combustion emissions), as negative emissions don't make physical sense.</p></section><section class="print-page" id="rfnbo%20case%20studies-8-full-example" heading-number="2.8"><h1 id="rfnbo%20case%20studies-8-full-example-8-full-example">8: Full example</h1>
 <ul>
 <li>How to combine the previous examples and where to find additional information.</li>
 </ul>
@@ -4551,7 +4665,7 @@ Share_{bio-kerosene} &amp;= \frac{r_{sh}}{1 + r_{sh}} = 80\color{grey}{\%}
 <tr>
 <td>Total GHG intensity</td>
 <td style="text-align: center;"><span class="arithmatex">\(CI_{ren}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(0\ \color{grey}{\left.g\,CO_2\,eq\middle/kWh_{el}\right.}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(0\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{el}\right.}\)</span></td>
 </tr>
 </tbody>
 </table>

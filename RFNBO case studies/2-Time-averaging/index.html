@@ -1294,7 +1294,7 @@
          style="fill:#7a55d4;fill-opacity:1;stroke-width:0.264583"><tspan
            style="font-style:italic;font-variant:normal;font-weight:400;font-size:3.30729px;font-family:Arial;fill:#7a55d4;fill-opacity:1;stroke-width:0.264583"
            id="tspan52-8-7" /></tspan></text></g></svg></p>
-<p>Electrolyser running at 764 MW with fully renewable, directly connected electricity, complemented by grid electricity. Oxygen is vented.</p>
+<p>Electrolyser running at 27.8 MW (100 GJ/h) with fully renewable, directly connected electricity, complemented by grid electricity. Oxygen is vented.</p>
 <p>This case study shows that until 2030, it is possible to choose between monthly averaging or hourly averaging. As an example, we show an example of both. We pick one hour with particularly low renewables to exemplify how the calculation has to be done.</p>
 <h2 id="assumptions">Assumptions</h2>
 <table>
@@ -1316,41 +1316,54 @@
 <tr>
 <td>Relevant renewable electricity used</td>
 <td><span class="arithmatex">\(el_{ren}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(500\ \color{grey}{GWh}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(264\ \color{grey}{MWh}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(60\ \color{grey}{TJ}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(40\ \color{grey}{GJ}\)</span></td>
 </tr>
 <tr>
 <td>Relevant grid electricity used</td>
 <td><span class="arithmatex">\(el_{grid\_ely}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(50\ \color{grey}{GWh}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(500\ \color{grey}{MWh}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(12\ \color{grey}{TJ}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(60\ \color{grey}{GJ}\)</span></td>
 </tr>
 <tr>
 <td>Grid electricity for auxiliaries</td>
 <td><span class="arithmatex">\(el_{grid\_aux}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(0.5\ \color{grey}{GWh}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(0.7\ \color{grey}{MWh}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(3.6\ \color{grey}{TJ}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(5\ \color{grey}{GJ}\)</span></td>
 </tr>
 <tr>
 <td>Fully renewable electricity GHG intensity</td>
 <td><span class="arithmatex">\(CI_{ren}\)</span></td>
-<td colspan="2" style="text-align: center;"><span class="arithmatex">\(0\ \color{grey}{\left.g\,CO_2\,eq\middle/kWh_{el}\right.}\)</span></td>
+<td colspan="2" style="text-align: center;"><span class="arithmatex">\(0\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{el}\right.}\)</span></td>
 <td style="text-align: center;"></td>
 </tr>
 <tr>
 <td>Grid GHG intensity</td>
 <td><span class="arithmatex">\(CI_{grid}\)</span></td>
-<td colspan="2" style="text-align: center;"><span class="arithmatex">\(100\ \color{grey}{\left.g\,CO_2\,eq\middle/kWh_{el}\right.}\)</span></td>
+<td colspan="2" style="text-align: center;"><span class="arithmatex">\(50\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{el}\right.}\)</span></td>
 <td style="text-align: center;"></td>
 </tr>
 </tbody>
 </table>
 <h2 id="calculation">Calculation</h2>
 <h3 id="hourly-averaging-low-renewables">Hourly averaging, low renewables</h3>
-<p>Amount of hydrogen produced: <span class="arithmatex">\({prod}_{H2} = \left(el_{ren} + {el}_{grid\_ely} \right)  \times  \eta_{ely} \approx 1\,650\ \color{grey}{GJ}\)</span></p>
+<p>Amount of hydrogen produced: 
+$$
+{prod}<em ren="ren">{H2} = \left(el</em>} + {el<em ely="ely">{grid_ely} \right)  \times  \eta</em>
+$$} \approx 60 \color{grey}{GJ</p>
 <p>Total GHG intensity:</p>
 <div class="arithmatex">\[
-{CI}_{H2} = \frac{\left( {el}_{grid\_ely} + el_{grid\_aux} \right)  \times  CI_{grid}}{{prod}_{H2}} \approx 30.3\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+\begin{aligned}
+{E}_{H_2} &amp;= (e_{i,elastic} + e_{i,rigid} - e_{ex-use}) + e_p + e_{td} + e_u - e_{ccs}
+\\
+e_{i,rigid},\ e_{ex-use},\ e_{td},\ e_u,\ e_{ccs} &amp;&amp;= 0\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+\\
+e_{i,elastic} &amp;= \frac{{el}_{grid\_ely}  \times  CI_{grid}}{{prod}_{H2}} &amp;\approx 50\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+\\
+e_p &amp;= \frac{el_{grid\_aux} \times  CI_{grid}}{{prod}_{H2}} &amp;\approx 4.2\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+\\
+{E}_{H2} &amp;&amp;\approx 54.2\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+\end{aligned}
 \]</div>
 <details class="failure">
 <summary>Threshold not reached</summary>
@@ -1362,16 +1375,22 @@
 <p>This example should not imply that hourly averaging is bad. In other hours, the share of renewables is higher than the average, and a higher share of the production can be declared as RFNBO. In many cases, monthly averaging might not reach the threshold, and the whole monthly production could not be declared as RFNBO.</p>
 </details>
 <h3 id="monthly-averaging">Monthly averaging</h3>
-<p>Amount of hydrogen produced: <span class="arithmatex">\({prod}_{H2} = \left(el_{ren} + {el}_{grid\_ely} \right)  \times  \eta_{ely} \approx 1\,980\,000\ \color{grey}{GJ}\)</span></p>
+<p>Amount of hydrogen produced:
+$$
+{prod}<em ren="ren">{H2} = \left(el</em>} + {el<em ely="ely">{grid_ely} \right)  \times  \eta</em>
+$$} \approx 43.2 \color{grey}{TJ</p>
 <p>Total GHG intensity:</p>
 <div class="arithmatex">\[
-{CI}_{H2} = \frac{\left( {el}_{grid\_ ely} + el_{grid\_aux} \right)  \times  CI_{grid}}{{prod}_{H2}} \approx 4.3\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
+{E}_{H2} = \frac{\left( {el}_{grid\_ ely} + el_{grid\_aux} \right)  \times  CI_{grid}}{{prod}_{H2}} \approx 18.1\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
 \]</div>
 <details class="success">
 <summary>Threshold reached</summary>
 <p>The threshold of <span class="arithmatex">\(28.2\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}\)</span> is met. We can declare the fuel as RFNBO (or low carbon fuel).</p>
 </details>
-<p>Share of RFNBO in the output: <span class="arithmatex">\(Share_{RFNBO-H_2} = \frac{el_{ren}}{el_{ren} + {el}_{grid\_ely}} \approx 91\color{grey}{\%}\)</span></p>
+<p>Share of RFNBO in the output: 
+$$
+Share_{RFNBO-H_2} = \frac{el_{ren}}{el_{ren} + {el}_{grid_ely}} \approx 83\color{grey}{\%}
+$$</p>
 <p>The remainder is low-carbon fuel.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>This case study shows how averaging over shorter time scales can exclude some periods with low renewables from the RFNBO production. In other cases that are not shown here, the contrary could happen that the average over a longer period has a too high GHG intensity to qualify.</p>
