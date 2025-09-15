@@ -1,683 +1,13 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      
-      
-      
-      
-        <link rel="prev" href="../4-Integrated-processes/">
-      
-      
-        <link rel="next" href="../6-Partly-replacing-fossil-inputs/">
-      
-      
-      <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
-    
-    
-      
-        <title>5: Biofuels and RFNBO co-production - RFNBO & RCF case studies</title>
-      
-    
-    
-      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
-      
-      
-
-
-    
-    
-      
-    
-    
-      
-        
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-      
-    
-    
-      <link rel="stylesheet" href="../../css/print-site.css">
-    
-      <link rel="stylesheet" href="../../css/print-site-material.css">
-    
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
-    
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-    
-      
-
-    
-    
-    
-  </head>
-  
-  
-    <body dir="ltr">
-  
-    
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
-      
-        
-        <a href="#5-biofuels-and-rfnbo-co-production" class="md-skip">
-          Skip to content
-        </a>
-      
-    </div>
-    <div data-md-component="announce">
-      
-    </div>
-    
-    
-      
-
-  
-
-<header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="RFNBO &amp; RCF case studies" class="md-header__button md-logo" aria-label="RFNBO & RCF case studies" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
-
-    </a>
-    <label class="md-header__button md-icon" for="__drawer">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
-    </label>
-    <div class="md-header__title" data-md-component="header-title">
-      <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
-            RFNBO & RCF case studies
-          </span>
-        </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
-            
-              5: Biofuels and RFNBO co-production
-            
-          </span>
-        </div>
-      </div>
-    </div>
-    
-    
-      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
-    
-    
-    
-      
-      
-        <label class="md-header__button md-icon" for="__search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-        </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-      
-    
-    
-  </nav>
-  
-</header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
-        
-          
-        
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
-          
-            
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-
-
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="RFNBO &amp; RCF case studies" class="md-nav__button md-logo" aria-label="RFNBO & RCF case studies" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
-
-    </a>
-    RFNBO & RCF case studies
-  </label>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Overview
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    RFNBO case studies
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            RFNBO case studies
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../1-Co-products/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    1: Co-products
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../2-Time-averaging/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    2: Time averaging
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../3-Relevant-inputs/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    3: Relevant inputs
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../4-Integrated-processes/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    4: Integrated processes
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    5: Biofuels and RFNBO co-production
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    5: Biofuels and RFNBO co-production
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-    <a href="#assumptions" class="md-nav__link">
-      <span class="md-ellipsis">
-        Assumptions
-      </span>
-    </a>
-  
-    <!-- Table of contents list -->
-    
-  </li>
-      
-        <li class="md-nav__item">
-    <a href="#calculation" class="md-nav__link">
-      <span class="md-ellipsis">
-        Calculation
-      </span>
-    </a>
-  
-    <!-- Table of contents list -->
-    
-  </li>
-      
-        <li class="md-nav__item">
-    <a href="#conclusion" class="md-nav__link">
-      <span class="md-ellipsis">
-        Conclusion
-      </span>
-    </a>
-  
-    <!-- Table of contents list -->
-    
-  </li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../6-Partly-replacing-fossil-inputs/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    6: Partly replacing fossil inputs
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../7-Allocation-to-co-produced-heat/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    7: Allocation to co-produced heat
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../8-Full-example/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    8: Full example
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    FAQ
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            FAQ
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../FAQ/faq/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Q&amp;A implementation of hydrogen delegated acts
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-  </ul>
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-    <a href="#assumptions" class="md-nav__link">
-      <span class="md-ellipsis">
-        Assumptions
-      </span>
-    </a>
-  
-    <!-- Table of contents list -->
-    
-  </li>
-      
-        <li class="md-nav__item">
-    <a href="#calculation" class="md-nav__link">
-      <span class="md-ellipsis">
-        Calculation
-      </span>
-    </a>
-  
-    <!-- Table of contents list -->
-    
-  </li>
-      
-        <li class="md-nav__item">
-    <a href="#conclusion" class="md-nav__link">
-      <span class="md-ellipsis">
-        Conclusion
-      </span>
-    </a>
-  
-    <!-- Table of contents list -->
-    
-  </li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-                  
-
-
-
-<h1 id="5-biofuels-and-rfnbo-co-production">5: Biofuels and RFNBO co-production</h1>
-<ul>
-<li>How to split biogenic and RFNBO-parts</li>
-</ul>
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<p><svg
-   width="549.70819"
-   height="315.11719"
-   viewBox="0 0 145.44374 83.374975"
+<svg
+   width="355.95029"
+   height="377.07632"
+   viewBox="0 0 94.178588 99.768373"
    version="1.1"
    id="svg1"
    xml:space="preserve"
-   sodipodi:docname="cs5_biogenic co-production.svg"
-   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="h3_hydrogen.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -691,15 +21,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="0.94042256"
-     inkscape:cx="454.05121"
-     inkscape:cy="205.75857"
+     inkscape:zoom="1.4594422"
+     inkscape:cx="500.5337"
+     inkscape:cy="216.17848"
      inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="-8"
+     inkscape:window-height="1009"
+     inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" /><defs
+     inkscape:current-layer="svg1" /><defs
      id="defs1"><clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipEmfPath15"><path
@@ -708,117 +38,132 @@
        id="style1">.a{fill:#fff}.b{fill:#211715}.c{fill:#64a4d6}.d{fill:#febe69}.st1{fill:#7d828c}.st2{fill:#a4a5a6}.st0{fill:#000}</style></defs><text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.6224px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0;word-spacing:0;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-     x="-0.44223851"
-     y="52.506023"
+     x="2.1275177"
+     y="48.43269"
      id="text22"><tspan
-       x="-0.44223851"
-       y="52.506023"
+       x="2.1275177"
+       y="48.43269"
        id="tspan22"
        style="stroke-width:0.264583"><tspan
          dx="0"
          dy="0"
          style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.6224px;font-family:Arial;fill:#23a2bc;stroke-width:0.264583"
-         id="tspan21">Renewables</tspan></tspan></text><path
-     style="fill:none;stroke:#23a2bc;stroke-width:3.17483px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:8;stroke-dasharray:none;stroke-opacity:1"
-     d="m 23.666761,37.273026 h 14.107 v 21.568 h 14.106"
-     id="path29" /><text
+         id="tspan21">Renewables</tspan></tspan></text><text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.6224px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0;word-spacing:0;text-anchor:start;fill:#00bc61;fill-opacity:1;stroke:none;stroke-width:0.264583"
+     x="71.015427"
+     y="98.585144"
+     id="text22-6"><tspan
+       x="71.015427"
+       y="98.585144"
+       id="tspan22-06"
+       style="fill:#00bc61;fill-opacity:1;stroke-width:0.264583">Oxygen<tspan
+   style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.6224px;font-family:Arial;fill:#00bc61;fill-opacity:1;stroke-width:0.264583"
+   id="tspan21-6" /></tspan></text><text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.6224px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0;word-spacing:0;text-anchor:start;fill:#2347bc;fill-opacity:1;stroke:none;stroke-width:0.264583"
+     x="22.674204"
+     y="4.0932608"
+     id="text22-5"><tspan
+       x="22.674204"
+       y="4.0932608"
+       id="tspan22-0"
+       style="fill:#2347bc;fill-opacity:1;stroke-width:0.264583">Sea water desalination<tspan
+   style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.6224px;font-family:Arial;fill:#2347bc;fill-opacity:1;stroke-width:0.264583"
+   id="tspan21-2" /></tspan></text><text
      xml:space="preserve"
      style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.6224px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0;word-spacing:0;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-     x="61.035789"
-     y="25.269028"
-     id="text31"><tspan
-       x="61.035789"
-       y="25.269028"
-       id="tspan31"
+     x="-0.29948226"
+     y="84.056686"
+     id="text26"><tspan
+       x="-0.29948226"
+       y="84.056686"
+       id="tspan26"
        style="stroke-width:0.264583"><tspan
          dx="0"
          dy="0"
-         style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.6224px;font-family:Arial;fill:#1ec08a;stroke-width:0.264583"
-         id="tspan30">Biomass</tspan></tspan></text><text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.6224px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0;word-spacing:0;text-anchor:start;fill:#1ec08a;fill-opacity:1;stroke:none;stroke-width:0.264583"
-     x="103.31599"
-     y="32.018608"
-     id="text31-8"><tspan
-       sodipodi:role="line"
-       id="tspan14"
-       x="103.31599"
-       y="32.018608"><tspan
-         x="103.31599"
-         y="32.018608"
-         id="tspan31-0"
-         style="fill:#1ec08a;fill-opacity:1;stroke-width:0.264583"><tspan
-           dx="0"
-           dy="0"
-           style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.6224px;font-family:Arial;fill:#1ec08a;fill-opacity:1;stroke-width:0.264583"
-           id="tspan30-5">Biogenic syngas</tspan></tspan></tspan><tspan
-       sodipodi:role="line"
-       id="tspan15"
-       x="103.31599"
-       y="39.046604"
-       dy="0 0 0 0 0 0 0.2813459 -0.2813459">(low H<tspan
-   style="font-size:65%;baseline-shift:sub;fill:#1ec08a;fill-opacity:1"
-   id="tspan16">2</tspan>/CO ratio)</tspan></text><text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.6224px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0;word-spacing:0;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-     x="83.187119"
-     y="82.257629"
-     id="text31-0-9"><tspan
-       x="83.187119"
-       y="82.257629"
-       id="tspan31-6-3"
-       style="stroke-width:0.264583">Fischer-Tropsch</tspan></text><path
-     style="fill:none;stroke:#1ec08a;stroke-width:3.51348px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:8;stroke-dasharray:none;stroke-opacity:1"
-     d="m 80.420792,10.012026 h 11.795"
-     id="path32" /><path
-     style="fill:none;stroke:#1ec08a;stroke-width:1.44992;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:8;stroke-dasharray:none;stroke-opacity:1"
-     d="m 100.98014,50.629372 v -31.87"
-     id="path34" /><path
+         style="font-style:normal;font-variant:normal;font-weight:400;font-size:5.6224px;font-family:Arial;fill:#ffc000;stroke-width:0.264583"
+         id="tspan25">Grid electricity</tspan></tspan></text><path
+     style="fill:none;stroke:#ffc000;stroke-width:1.39693px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:8;stroke-dasharray:none;stroke-opacity:1"
+     d="m 26.278518,68.842692 h 13.176 v -11.937 h 14.932"
+     id="path28" /><path
+     style="fill:none;stroke:#00bc61;stroke-width:1.39693px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:8;stroke-dasharray:none;stroke-opacity:1"
+     d="m 63.21624,69.291306 v 16.525716 h 8.768099"
+     id="path28-8"
+     sodipodi:nodetypes="ccc" /><path
+     style="fill:none;stroke:#23a2bc;stroke-width:3.17483px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:8;stroke-dasharray:none;stroke-opacity:1"
+     d="m 26.236518,33.199692 h 14.107 v 21.568 h 14.106"
+     id="path29" /><path
+     style="fill:none;stroke:#ffc000;stroke-width:0.983354px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:8;stroke-dasharray:none;stroke-opacity:1"
+     d="m 71.414518,56.227692 h 22.74"
+     id="path35" /><path
      style="fill:none;stroke:#23a2bc;stroke-width:2.58778px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:8;stroke-dasharray:none;stroke-opacity:1"
-     d="m 68.811761,58.799026 h 22.797"
-     id="path36" /><g
+     d="m 71.381518,54.725692 h 22.797"
+     id="path36" /><path
+     style="fill:none;stroke:#2347bc;stroke-width:2.34845;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:8;stroke-dasharray:none;stroke-opacity:1"
+     d="M 62.600557,21.971337 62.392665,40.579562"
+     id="path36-4" /><g
+     id="g54"
+     transform="translate(48.882518,-86.325308)"><g
+       id="g55"
+       transform="translate(-2.43,-1.663)"><text
+         xml:space="preserve"
+         style="font-style:italic;font-variant:normal;font-weight:400;font-size:4.96094px;line-height:125%;font-family:Arial;text-align:end;letter-spacing:0;word-spacing:0;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="40.376999"
+         y="148.873"
+         id="text43"><tspan
+           x="40.376999"
+           y="148.873"
+           id="tspan43"
+           style="text-align:end;text-anchor:end;stroke-width:0.264583"><tspan
+             dx="0 0 0 0"
+             dy="0 0 0 0"
+             style="font-style:italic;font-variant:normal;font-weight:400;font-size:4.96094px;font-family:Arial;text-align:end;text-anchor:end;fill:#ffc000;stroke-width:0.264583"
+             id="tspan42">LC H</tspan></tspan></text><text
+         xml:space="preserve"
+         style="font-style:italic;font-variant:normal;font-weight:400;font-size:3.30729px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0;word-spacing:0;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+         x="40.401001"
+         y="150.058"
+         id="text45"><tspan
+           x="40.401001"
+           y="150.058"
+           id="tspan45"
+           style="stroke-width:0.264583"><tspan
+             dx="0"
+             dy="0"
+             style="font-style:italic;font-variant:normal;font-weight:400;font-size:3.30729px;font-family:Arial;fill:#ffc000;stroke-width:0.264583"
+             id="tspan44">2</tspan></tspan></text></g></g><g
      id="g57"
-     transform="translate(32.371761,-83.146974)"><text
+     transform="translate(34.941518,-87.220308)"><text
        xml:space="preserve"
        style="font-style:italic;font-variant:normal;font-weight:400;font-size:4.96094px;line-height:125%;font-family:Arial;text-align:end;letter-spacing:0;word-spacing:0;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="59.163002"
+       x="55.987999"
        y="138.314"
        id="text51"><tspan
-         x="59.163002"
+         x="55.987999"
          y="138.314"
          id="tspan51"
          style="text-align:end;text-anchor:end;stroke-width:0.264583"><tspan
            dx="0 0 0 0 0 0 0"
            dy="0 0 0 0 0 0 0"
            style="font-style:italic;font-variant:normal;font-weight:400;font-size:4.96094px;font-family:Arial;text-align:end;text-anchor:end;fill:#23a2bc;stroke-width:0.264583"
-           id="tspan50">RFNBO-H<tspan
-   style="font-size:65%;baseline-shift:sub"
-   id="tspan17">2</tspan></tspan></tspan></text></g><path
-     style="fill:none;stroke:#1ec08a;stroke-width:1.18692;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:8;stroke-dasharray:none;stroke-opacity:1"
-     d="m 113.60468,60.150782 h 31.808"
-     id="path54" /><path
-     style="fill:none;stroke:#23a2bc;stroke-width:1.45841px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:8;stroke-dasharray:none;stroke-opacity:1"
-     d="m 113.51868,58.799026 h 31.86"
-     id="path55" /><text
-     xml:space="preserve"
-     style="font-style:italic;font-variant:normal;font-weight:400;font-size:4.96094px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0;word-spacing:0;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-     x="120.13457"
-     y="55.896397"
-     id="text56"><tspan
-       x="120.13457"
-       y="55.896397"
-       id="tspan56"
-       style="stroke-width:0.264583">kerosene<tspan
-   style="font-style:italic;font-variant:normal;font-weight:400;font-size:4.96094px;font-family:Arial;fill:#949494;stroke-width:0.264583"
-   id="tspan55" /></tspan></text><a
-     id="a7"
-     transform="translate(5.5887925,-26.416974)"><path
-       fill="#231f20"
-       d="m 69.963,33.212 a 4.251,4.251 0 1 0 -8.093,0 4.249,4.249 0 0 0 1.39,8.265 4.22,4.22 0 0 0 1.594,-0.315 v 3.237 c 0,0.147 0.119,0.266 0.266,0.266 h 1.594 a 0.265,0.265 0 0 0 0.266,-0.266 v -3.237 c 0.492,0.2 1.03,0.315 1.594,0.315 a 4.249,4.249 0 0 0 1.39,-8.265 z m -3.515,10.922 h -1.063 v -3.23 c 0.186,-0.109 0.365,-0.229 0.532,-0.363 0.167,0.134 0.345,0.254 0.531,0.362 z m 2.126,-3.189 a 3.697,3.697 0 0 1 -2.087,-0.642 l 1.75,-1.749 h 1.134 a 0.266,0.266 0 1 0 0,-0.531 H 68.308 V 36.96 a 0.266,0.266 0 1 0 -0.531,0 v 1.301 l -1.595,1.595 v -3.317 l 0.988,-0.988 a 0.266,0.266 0 0 0 0,-0.376 0.27,0.27 0 0 0 -0.38,0.004 l -0.873,0.874 -0.885,-0.885 c -0.104,-0.104 -0.249,-0.08 -0.352,0.024 -0.104,0.104 -0.116,0.26 -0.012,0.364 l 0.983,0.983 v 3.317 L 64.057,38.262 V 36.96 a 0.266,0.266 0 1 0 -0.531,0 v 1.063 h -1.064 a 0.266,0.266 0 1 0 0,0.531 h 1.134 l 1.75,1.749 a 3.72,3.72 0 1 1 -2.756,-6.734 3.697,3.697 0 0 1 -0.394,-1.657 3.72,3.72 0 1 1 7.44,0 c 0,0.596 -0.144,1.158 -0.394,1.657 a 3.718,3.718 0 0 1 -0.67,7.376 z"
-       id="path1-3"
-       style="fill:#1ec08a;fill-opacity:1;stroke:none;stroke-width:0.265685;stroke-opacity:1" /></a><a
+           id="tspan50">RFNBO-H</tspan></tspan></text><text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:400;font-size:3.30729px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0;word-spacing:0;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="56.012001"
+       y="139.49899"
+       id="text53"><tspan
+         x="56.012001"
+         y="139.49899"
+         id="tspan53"
+         style="stroke-width:0.264583"><tspan
+           dx="0"
+           dy="0"
+           style="font-style:italic;font-variant:normal;font-weight:400;font-size:3.30729px;font-family:Arial;fill:#23a2bc;stroke-width:0.264583"
+           id="tspan52">2</tspan></tspan></text></g><a
      id="a4"
-     transform="translate(-2.5702385,-26.416974)"><g
+     xlink:href="#electrolysis"
+     transform="translate(-4.8225731e-4,-30.490308)"><g
        id="g47"
        transform="matrix(1.38894,0,0,1.38894,22.517,-136.045)"><g
          id="g39"
@@ -908,7 +253,8 @@
            fill="#000000"
            id="path1-8" /></g></g></a><a
      id="a1"
-     transform="translate(-2.5702385,-26.416974)"><g
+     xlink:href="#renewable-electricity-production"
+     transform="translate(-4.8225731e-4,-30.490308)"><g
        id="g41"
        transform="matrix(0.04114,0,0,0.04114,9.316,56.113)"><path
          class="a"
@@ -1154,258 +500,184 @@
          class="b"
          d="m 339.651,129.216 a 12.106,12.106 0 0 0 -3.427,2.342 c -1.64,1.964 -1.824,4.617 -1.5,7.057 a 16.565,16.565 0 0 0 7.809,11.956 c 2.153,1.24 4.726,1.906 7.031,0.679 a 13.32,13.32 0 0 0 3.081,-1.97 c 1.6,-1.576 2.028,-4.078 1.928,-6.234 a 16.344,16.344 0 0 0 -1.884,-6.684 c -2.2,-4.277 -7.829,-9.915 -13.042,-7.146 -2.274,1.208 -0.256,4.662 2.019,3.454 a 2.076,2.076 0 0 1 1.6,-0.031 7.454,7.454 0 0 1 2.425,1.309 12.761,12.761 0 0 1 3.151,3.719 12.979,12.979 0 0 1 1.674,4.692 c 0.165,1.211 0.119,3.078 -0.633,4.045 0.062,-0.08 0.181,-0.2 -0.071,0.048 -0.411,0.411 0.163,-0.085 -0.116,0.1 -0.1,0.062 -0.2,0.116 -0.3,0.174 -0.489,0.287 -0.982,0.567 -1.473,0.85 -0.887,0.513 -1.531,0.471 -2.767,-0.126 a 12.4,12.4 0 0 1 -6.287,-8.244 c -0.376,-1.554 -0.645,-3.762 0.352,-5.043 -0.174,0.223 0.285,-0.26 0.263,-0.243 -0.149,0.119 0.006,0.01 0.124,-0.064 0.159,-0.1 0.325,-0.188 0.487,-0.281 l 1.563,-0.9 c 2.242,-1.292 0.228,-4.75 -2.007,-3.459 z"
          id="path81" /></g></a><a
-     id="a8-3"
-     transform="translate(0.09264028,-26.135628)"><g
-       id="Layer_17-0"
-       transform="matrix(0.29313,0,0,0.29313,91.686,76.242)"><path
-         class="st0"
-         d="M 40,7 H 38 V 5 C 38,4.4 37.6,4 37,4 H 23 C 22.4,4 22,4.4 22,5 V 7 H 20 V 5 c 0,-1.7 1.3,-3 3,-3 h 14 c 1.7,0 3,1.3 3,3 z"
-         id="path1-5-3"
-         style="fill:#000000" /><path
-         class="st0"
-         d="M 15,25 H 10 C 8.3,25 7,23.7 7,22 V 10 C 7,8.3 8.3,7 10,7 h 8 V 9 H 10 C 9.4,9 9,9.4 9,10 v 12 c 0,0.6 0.4,1 1,1 h 5 z"
-         id="path2-7-6"
-         style="fill:#000000" /><path
-         class="st0"
-         d="m 56,47 h -2 v -7 c 0,-0.6 -0.4,-1 -1,-1 h -8 v -2 h 8 c 1.7,0 3,1.3 3,3 z"
-         id="path3-3-1"
-         style="fill:#000000" /><path
-         class="st0"
-         d="M 14,58 V 38 C 7.4,38 2,43.4 2,50 v 8 z"
-         id="path4-3-3"
-         style="fill:#000000" /><path
-         class="st1"
-         id="rect4-5"
-         d="m 2,58 h 60 v 4 H 2 Z"
-         style="fill:#7d828c" /><path
-         class="st0"
-         id="rect5-2"
-         d="M 42,46 H 62 V 58 H 42 Z"
-         style="fill:#000000" /><path
-         class="st2"
-         id="rect6-0"
-         d="m 45,49 h 4 v 2 h -4 z"
-         style="fill:#a4a5a6" /><path
-         class="st2"
-         id="rect7-8"
-         d="m 55,49 h 4 v 2 h -4 z"
-         style="fill:#a4a5a6" /><path
-         class="st2"
-         d="M 46,46 V 13 C 46,9.1 42.9,6 39,6 35.1,6 32,9.1 32,13 v 33 z"
-         id="path7-1-6"
-         style="fill:#a4a5a6" /><path
-         class="st2"
-         d="M 28,46 V 13 C 28,9.1 24.9,6 21,6 17.1,6 14,9.1 14,13 v 33 z"
-         id="path8-7-9"
-         style="fill:#a4a5a6" /><path
-         class="st1"
-         id="rect8-0"
-         d="m 12,46 h 30 v 4 H 12 Z"
-         style="fill:#7d828c" /><path
-         class="st0"
-         id="rect9-4"
-         d="m 12,33 h 36 v 2 H 12 Z"
-         style="fill:#000000" /><path
-         class="st0"
-         id="rect10-2"
-         d="m 12,29 h 36 v 2 H 12 Z"
-         style="fill:#000000" /><path
-         class="st0"
-         id="rect11-8"
-         d="m 12,17 h 36 v 2 H 12 Z"
-         style="fill:#000000" /><path
-         class="st0"
-         id="rect12-5"
-         d="m 12,13 h 36 v 2 H 12 Z"
-         style="fill:#000000" /><path
-         class="st2"
-         id="rect13-8"
-         d="m 32,50 h 10 v 8 H 32 Z"
-         style="fill:#a4a5a6" /><path
-         class="st2"
-         id="rect14-3"
-         d="m 14,50 h 14 v 8 H 14 Z"
-         style="fill:#a4a5a6" /><path
-         class="st2"
-         d="M 62,46 H 58 V 28 c 0,-1.1 -0.9,-2 -2,-2 H 46 v -4 h 10 c 3.3,0 6,2.7 6,6 z"
-         id="path14-3-8"
-         style="fill:#a4a5a6" /></g></a><g
-     inkscape:label="Layer 1"
-     id="layer1"
-     transform="matrix(0.20980205,0,0,0.1279053,86.301255,-4.0386986)"
-     style="stroke:#000000;stroke-opacity:1"><path
-       style="fill:#1ec08a;fill-opacity:1;stroke:#000000;stroke-width:1.2;stroke-dasharray:none;stroke-opacity:1"
-       d="M 81.85769,63.767643 101.35692,32.392309 36.007981,32.179325 56.303374,63.138691"
-       id="path2"
-       sodipodi:nodetypes="cccc" /><path
-       style="fill:#1ec08a;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
-       d="M 61.859927,54.983288 46.304506,77.412033 v 66.562727 l 17.364189,14.10841 h 5.512204"
-       id="path1-1"
-       sodipodi:nodetypes="ccccc" /><path
-       style="fill:#1ec08a;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
-       d="m 75.894885,54.983288 15.555423,22.428745 v 66.562717 l -17.364193,14.10841 h -5.06455"
-       id="path1-9-6"
-       sodipodi:nodetypes="ccccc" /></g></svg></p>
-<p>Instead of using a shift reaction to increase the H<sub>2</sub>/CO ratio in biogenic syngas, RFNBO hydrogen is added to the Fischer-Tropsch process. According to the “co-processing exception” in Annex A point 1, a distinction on a proportional basis of the energetic value of inputs shall be made.</p>
-<p>As clarified in the <a href="https://circabc.europa.eu/ui/group/8f5f9424-a7ef-4dbf-b914-1af1d12ff5d2/library/ca8efd4d-cb44-4aec-914d-3d95f95ea293/details">Q&amp;A document</a>, the process can be split using the share of RFNBO hydrogen in overall hydrogen input to determine the share of all products going into the part of the process following the RFNBO GHG methodology.</p>
-<h2 id="assumptions">Assumptions</h2>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th style="text-align: center;">Symbol</th>
-<th style="text-align: center;">Example value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>H2:CO ratio of biogenic syngas</td>
-<td style="text-align: center;"><span class="arithmatex">\(r_{bio}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(1:1\)</span></td>
-</tr>
-<tr>
-<td>Molar ratio of biogenic syngas to RFNBO hydrogen</td>
-<td style="text-align: center;"><span class="arithmatex">\(r_{sh}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(1:1\)</span></td>
-</tr>
-<tr>
-<td>(H2:CO ratio for FT reaction</td>
-<td style="text-align: center;"><span class="arithmatex">\(r_{FT}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(3:1\)</span> )</td>
-</tr>
-<tr>
-<td>Molar LHV hydrogen</td>
-<td style="text-align: center;"><span class="arithmatex">\(lhv_{H_2}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(244\ \color{grey}{\left.MJ\middle/kmol\right.}\)</span></td>
-</tr>
-<tr>
-<td>Molar LHV CO</td>
-<td style="text-align: center;"><span class="arithmatex">\(lhv_{CO}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(283\ \color{grey}{\left.MJ\middle/kmol\right.}\)</span></td>
-</tr>
-<tr>
-<td>Efficiency of the FT reaction</td>
-<td style="text-align: center;"><span class="arithmatex">\(\eta_{FT}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(70\color{grey}{\%}\)</span></td>
-</tr>
-<tr>
-<td>RFNBO hydrogen GHG intensity</td>
-<td style="text-align: center;"><span class="arithmatex">\(CI_{H_2}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(5\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{el}\right.}\)</span></td>
-</tr>
-<tr>
-<td>Biogenic syngas GHG intensity</td>
-<td style="text-align: center;"><span class="arithmatex">\(CI_{bio\_syngas}\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(20\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{syngas}\right.}\)</span></td>
-</tr>
-</tbody>
-</table>
-<h2 id="calculation">Calculation</h2>
-<p>Energy in 1 kmol of syngas: <span class="arithmatex">\(En_{syngas} =  263.5\ \color{grey}{\left.MJ\middle/kmol\right.}\)</span></p>
-<p>Energy in 1 kmol of hydrogen: <span class="arithmatex">\(En_{H_2} =  283\ \color{grey}{\left.MJ\middle/kmol\right.}\)</span></p>
-<p>Energy share of RFNBO in the inputs: <span class="arithmatex">\(s_{RFNBO} = \frac{En_{H_2}}{En_{syngas} + En_{H_2}} \approx 51.8 \color{grey}{\%}\)</span></p>
-<p>This share will be used to split the process: all RFNBO hydrogen and 51.8% of the CO will go into the process part calculated according to the RFNBO GHG methodology.</p>
-<p>To simplify the example, we assume no process emissions. <span class="arithmatex">\(e_u\)</span> determined from emission factor.</p>
-<p>Total GHG intensity:</p>
-<div class="arithmatex">\[
-\begin{aligned}
-{E}_{RFNBO-kerosene} &amp;= \left(e_{i,elastic} + e_{i,rigid} - e_{ex-use}\right) + e_p + e_{td} + e_u - e_{ccs}
-\\
-e_{i,rigid},\ e_p,\ e_{td},\ e_{ccs} &amp;&amp;= 0\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}
-\\
-e_{i,elastic} &amp;= \frac{r_{FT} \times CI_{H_2} + CI_{bio\_syngas}}{\left(r_{FT} + 1\right) \times \eta_{FT}} &amp;\approx 12.5\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.}
-\\
-e_u &amp;&amp;= 68.2\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.}
-\\
-e_{ex-use} &amp;&amp;= 68.2\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.}
-\\
-{E}_{RFNBO-kerosene} &amp;= \frac{CI_{ren}}{\eta_{FT}} &amp;= 0\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.}
-\end{aligned}
-\]</div>
-<p>Ex-use is attributed because the carbon going into the RFNBO-kerosene is not fossil (see <a href="https://circabc.europa.eu/ui/group/8f5f9424-a7ef-4dbf-b914-1af1d12ff5d2/library/ca8efd4d-cb44-4aec-914d-3d95f95ea293/details">Q&amp;A document</a>)</p>
-<div class="arithmatex">\[
-\begin{aligned}
-{E}_{bio-kerosene} &amp;= \frac{CI_{bio\_syngas}}{\eta_{FT}} = \ 28.6\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{kerosene}\right.}
-\end{aligned}
-\]</div>
-<details class="success">
-<summary>Threshold reached for RFNBO</summary>
-<p>The threshold of <span class="arithmatex">\(28.2\ \color{grey}{\left.g\,CO_2\,eq\middle/MJ_{hydrogen}\right.}\)</span> is met. We can declare the fuel as RFNBO (or low carbon fuel). Different thresholds apply for the biofuel.</p>
-</details>
-<p>Share in the output (see above): </p>
-<div class="arithmatex">\[
-\begin{aligned}
-Share_{RFNBO-kerosene} &amp;= 51.8\color{grey}{\%} \\
-Share_{bio-kerosene} &amp;= 48.2\color{grey}{\%}
-\end{aligned}
-\]</div>
-<h2 id="conclusion">Conclusion</h2>
-<p>This case study shows that the streams are separated based on the energy in the inputs, and then the GHG intensity is calculated for each stream separately.</p>
+     id="a3"
+     xlink:href="#grid-electricity"
+     transform="translate(-4.8225731e-4,-30.490308)"><g
+       id="g43"
+       transform="matrix(0.27251,0,0,0.27251,7.068,89.602)"><g
+         id="color"><path
+           fill="#ffffff"
+           d="m 22.87,30.126 c -0.01,0 -0.02,-0.02 -0.02,-0.02 a 4.397,4.397 0 0 1 -0.52,-0.36 c -0.01,-0.01 -0.02,-0.01 -0.03,-0.02 a 6.098,6.098 0 0 1 -1.83,-2.6 5.998,5.998 0 0 1 3.16,-7.51 3.977,3.977 0 0 1 6.76,-2.13 5.015,5.015 0 0 1 2.72,-2.41 4.924,4.924 0 0 1 3.28,-0.02 4.975,4.975 0 0 1 7.3,-5.21 7.943,7.943 0 0 1 2.83,-1.77 7.846,7.846 0 0 1 2.67,-0.48 5.88,5.88 0 0 1 2.03,-1.23 6.003,6.003 0 0 1 7.69,3.58 c 0.06,0.17 0.11,0.34 0.16,0.52 a 3.529,3.529 0 0 1 0.56,0.14 3.948,3.948 0 0 1 2.53,2.42 4.002,4.002 0 0 1 -2.39,5.12 3.942,3.942 0 0 1 -2.91,-0.08 7.982,7.982 0 0 1 -9.79,5.21 4.96,4.96 0 0 1 -8.71,2.36 4.942,4.942 0 0 1 -6.82,1.99 5.914,5.914 0 0 1 -2.06,2.41"
+           id="path1-1" /><path
+           fill="#ffffff"
+           d="m 22.87,30.126 c -0.01,0 -0.02,-0.02 -0.02,-0.02 a 4.397,4.397 0 0 1 -0.52,-0.36 c -0.01,-0.01 -0.02,-0.01 -0.03,-0.02 a 6.098,6.098 0 0 1 -1.83,-2.6 5.998,5.998 0 0 1 3.16,-7.51 3.977,3.977 0 0 1 6.76,-2.13 5.015,5.015 0 0 1 2.72,-2.41 4.924,4.924 0 0 1 3.28,-0.02 4.975,4.975 0 0 1 7.3,-5.21 7.943,7.943 0 0 1 2.83,-1.77 7.846,7.846 0 0 1 2.67,-0.48 5.88,5.88 0 0 1 2.03,-1.23 6.003,6.003 0 0 1 7.69,3.58 c 0.06,0.17 0.11,0.34 0.16,0.52 a 3.529,3.529 0 0 1 0.56,0.14 3.948,3.948 0 0 1 2.53,2.42 4.002,4.002 0 0 1 -2.39,5.12 3.942,3.942 0 0 1 -2.91,-0.08 7.982,7.982 0 0 1 -9.79,5.21 4.96,4.96 0 0 1 -8.71,2.36 4.942,4.942 0 0 1 -6.82,1.99 5.914,5.914 0 0 1 -2.06,2.41"
+           id="path2-77" /><path
+           fill="#9b9b9a"
+           d="m 70.24,10.506 a 0.847,0.847 0 0 0 -0.17,-0.04 c -0.01,-0.05 -0.03,-0.1 -0.04,-0.14 a 1.68,1.68 0 0 1 0.21,0.18 z"
+           id="path3-2" /><path
+           fill="#ffffff"
+           id="rect3"
+           d="m 51,27 h 6 v 39 h -6 z" /><path
+           fill="#9b9b9a"
+           d="m 47,47.262 a 7.946,7.946 0 0 0 -8.187,2.667 C 37.702,42.633 37.643,34.798 39.197,30 H 33 v 36 h 14 z"
+           id="path4-9" /><path
+           fill="#d0cfce"
+           d="M 33,66 V 30 H 16 c 3,9.257 0,29.829 -5,36 z"
+           id="path5-28" /><path
+           fill="#3f3f3f"
+           d="M 47,47.262 V 66 h 6 V 55 a 7.996,7.996 0 0 0 -6,-7.738 z"
+           id="path6-0" /><path
+           fill="#ea5a47"
+           id="rect6-5"
+           d="m 51,31 h 6 v 4 h -6 z" /></g><g
+         id="line"><path
+           fill="none"
+           stroke="#000000"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           stroke-width="2"
+           d="m 22.87,30 c -0.01,0 -0.02,-0.02 -0.02,-0.02 A 4.397,4.397 0 0 1 22.33,29.62 C 22.32,29.61 22.31,29.61 22.3,29.6 a 6.098,6.098 0 0 1 -1.83,-2.6 5.998,5.998 0 0 1 3.16,-7.51 3.977,3.977 0 0 1 6.76,-2.13 5.015,5.015 0 0 1 2.72,-2.41 4.924,4.924 0 0 1 3.28,-0.02 4.975,4.975 0 0 1 7.3,-5.21 7.943,7.943 0 0 1 2.83,-1.77 7.846,7.846 0 0 1 2.67,-0.48 5.88,5.88 0 0 1 2.03,-1.23 6.003,6.003 0 0 1 7.69,3.58 c 0.06,0.17 0.11,0.34 0.16,0.52 a 3.529,3.529 0 0 1 0.56,0.14 3.948,3.948 0 0 1 2.53,2.42 4.002,4.002 0 0 1 -2.39,5.12 3.942,3.942 0 0 1 -2.91,-0.08 7.982,7.982 0 0 1 -9.79,5.21 4.96,4.96 0 0 1 -8.71,2.36 4.942,4.942 0 0 1 -6.82,1.99 5.914,5.914 0 0 1 -2.06,2.41"
+           id="path7-2" /><path
+           fill="none"
+           stroke="#000000"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           stroke-width="2"
+           d="m 44.197,66 c -5,-6.171 -8,-26.743 -5,-36 H 16 c 3,9.257 0,29.829 -5,36 z"
+           id="path8-2" /><path
+           fill="none"
+           stroke="#000000"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           stroke-width="2"
+           id="polyline8"
+           d="m 53,66 h 4 V 27 h -6 v 22.721" /><path
+           fill="none"
+           stroke="#000000"
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           stroke-width="2"
+           d="M 44.197,66 H 53 V 55 A 8,8 0 0 0 38.813,49.93"
+           id="path9-8" /></g></g></a><g
+     id="g7-7"
+     transform="matrix(0.24249926,0,0,0.22910395,52.901686,3.9423682)"
+     style="stroke:#2347bc;stroke-opacity:1">
 
+<g
+   id="g2-9"
+   style="stroke:#2347bc;stroke-opacity:1">
 
+<path
+   d="m 63,44 v -8 c 0,-2.209 1.791,-4 4,-4 v 0 c 2.209,0 4,1.791 4,4 v 8 c 0,2.209 -1.791,4 -4,4 v 0 c -2.209,0 -4,-1.791 -4,-4 z"
+   fill="none"
+   stroke="#000000"
+   stroke-linecap="round"
+   stroke-miterlimit="10"
+   stroke-width="4"
+   id="path1"
+   style="stroke:#2347bc;stroke-opacity:1" />
 
+<path
+   d="m 17,36 v 8 c 0,2.209 -1.791,4 -4,4 v 0 C 10.791,48 9,46.209 9,44 v -8 c 0,-2.209 1.791,-4 4,-4 v 0 c 2.209,0 4,1.791 4,4 z"
+   fill="none"
+   stroke="#000000"
+   stroke-linecap="round"
+   stroke-miterlimit="10"
+   stroke-width="4"
+   id="path2"
+   style="stroke:#2347bc;stroke-opacity:1" />
 
+<polygon
+   fill="none"
+   points="17,42 17,43 63,43 63,37 17,37 17,38 "
+   stroke="#000000"
+   stroke-linecap="round"
+   stroke-miterlimit="10"
+   stroke-width="4"
+   id="polygon2"
+   style="stroke:#2347bc;stroke-opacity:1" />
 
+</g>
 
+<g
+   id="g4-3"
+   style="stroke:#2347bc;stroke-opacity:1">
 
+<path
+   d="M 30,37 V 12.219 c 0,-1.251 0.776,-2.379 1.948,-2.817 4.906,-1.833 9.813,3.23 14.719,2.583 C 48.449,11.751 50,13.237 50,15.035 V 37"
+   fill="none"
+   stroke="#000000"
+   stroke-linecap="round"
+   stroke-linejoin="round"
+   stroke-miterlimit="10"
+   stroke-width="4"
+   id="path3"
+   style="stroke:#2347bc;stroke-opacity:1" />
 
+<path
+   d="m 30,43.01 v 21.963 c 0,1.798 1.551,3.285 3.333,3.05 4.906,-0.646 9.813,4.416 14.719,2.583 C 49.224,70.168 50,69.04 50,67.789 V 43.01"
+   fill="none"
+   stroke="#000000"
+   stroke-linecap="round"
+   stroke-linejoin="round"
+   stroke-miterlimit="10"
+   stroke-width="4"
+   id="path4"
+   style="stroke:#2347bc;stroke-opacity:1" />
 
+</g>
 
+<circle
+   cx="37"
+   cy="17"
+   r="2"
+   id="circle4"
+   style="stroke:#2347bc;stroke-opacity:1" />
 
+<circle
+   cx="37"
+   cy="26"
+   r="2"
+   id="circle5"
+   style="stroke:#2347bc;stroke-opacity:1" />
 
-                
-              </article>
-            </div>
-          
-          
-  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+<circle
+   cx="43"
+   cy="31"
+   r="2"
+   id="circle6"
+   style="stroke:#2347bc;stroke-opacity:1" />
 
-<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
-        </div>
-        
-      </main>
-      
-        <footer class="md-footer">
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
-  
-</div>
-      
-    </div>
-  </div>
-</footer>
-      
-    </div>
-    <div class="md-dialog" data-md-component="dialog">
-      <div class="md-dialog__inner md-typeset"></div>
-    </div>
-    
-    
-    
-      
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.instant.preview", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
-    
-    
-      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
-      
-        <script src="../../js/print-site.js"></script>
-      
-        <script src="../../javascripts/mathjax.js"></script>
-      
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-      
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-      
-        <script src="../../javascripts/extra.js"></script>
-      
-    
-  </body>
-</html>
+<circle
+   cx="43"
+   cy="22"
+   r="2"
+   id="circle7"
+   style="stroke:#2347bc;stroke-opacity:1" />
+
+</g><g
+     style="fill:#00bc61;fill-opacity:1"
+     id="g42"
+     transform="matrix(0.03203953,0,0,0.03203947,73.314312,77.599002)"><g
+       id="g2-8"
+       style="fill:#00bc61;fill-opacity:1">
+	<g
+   id="g1-6"
+   style="fill:#00bc61;fill-opacity:1">
+		<path
+   d="M 433.345,89.044 H 422.957 V 66.783 h 11.13 c 6.147,0 11.13,-4.983 11.13,-11.13 V 11.13 C 445.217,4.983 440.234,0 434.087,0 h -89.044 c -6.147,0 -11.13,4.983 -11.13,11.13 v 44.522 c 0,6.147 4.983,11.13 11.13,11.13 h 11.13 v 22.261 h -10.388 c -43.371,0 -78.655,35.285 -78.655,78.655 v 10.388 h -22.26 v -10.388 c 0,-43.371 -35.285,-78.655 -78.655,-78.655 h -10.388 v -22.26 h 11.13 c 6.147,0 11.13,-4.983 11.13,-11.13 V 11.13 C 178.087,4.983 173.104,0 166.957,0 H 77.913 c -6.147,0 -11.13,4.983 -11.13,11.13 v 44.522 c 0,6.147 4.983,11.13 11.13,11.13 h 11.13 V 89.043 H 78.655 C 35.285,89.044 0,124.328 0,167.699 v 77.171 111.304 77.171 C 0,476.715 35.285,512 78.655,512 h 87.56 c 43.37,0 78.654,-35.285 78.654,-78.655 v -10.388 h 22.261 v 10.388 c 0,43.371 35.285,78.655 78.655,78.655 h 87.56 c 43.37,0 78.654,-35.285 78.654,-78.655 V 356.174 244.87 167.699 C 512,124.328 476.715,89.044 433.345,89.044 Z M 89.044,22.261 h 66.783 v 22.261 h -11.13 -44.522 -11.13 V 22.261 Z m 44.521,44.522 V 89.044 H 111.304 V 66.783 Z m 89.044,345.043 v 21.518 c 0,31.096 -25.298,56.395 -56.395,56.395 H 78.655 c -31.096,0 -56.395,-25.298 -56.395,-56.395 v -66.04 h 200.348 v 44.522 z m 0,-222.609 v 44.522 h -89.043 c -6.147,0 -11.13,4.983 -11.13,11.13 0,6.147 4.983,11.13 11.13,11.13 h 89.043 v 89.043 H 22.261 V 256 H 65.67 c 6.147,0 11.13,-4.983 11.13,-11.13 0,-6.147 -4.983,-11.13 -11.13,-11.13 H 22.261 V 167.7 c 0,-31.096 25.298,-56.395 56.395,-56.395 h 21.518 44.522 21.518 c 31.096,0 56.395,25.298 56.395,56.395 z m 44.521,211.479 h -22.26 v -22.261 h 22.261 v 22.261 z m 0,-44.522 H 244.87 V 244.87 h 22.261 v 111.304 z m 0,-133.565 h -22.26 v -22.261 h 22.261 v 22.261 z M 356.174,22.261 h 66.783 v 22.261 h -11.13 -44.522 -11.13 V 22.261 Z m 44.522,44.522 V 89.044 H 378.435 V 66.783 Z m 89.043,366.562 c 0,31.096 -25.298,56.395 -56.395,56.395 h -87.56 c -31.095,0 -56.393,-25.298 -56.393,-56.395 v -21.518 -44.522 h 200.348 z m 0,-88.302 H 289.391 V 256 h 200.348 z m 0,-111.304 H 289.391 v -44.522 -21.518 c 0,-31.096 25.298,-56.395 56.395,-56.395 h 21.518 44.522 21.518 c 31.096,0 56.395,25.298 56.395,56.395 z"
+   id="path1-5"
+   style="fill:#00bc61;fill-opacity:1" />
+	</g>
+</g><g
+       id="g4-0"
+       style="fill:#00bc61;fill-opacity:1">
+	<g
+   id="g3-9"
+   style="fill:#00bc61;fill-opacity:1">
+		<path
+   d="m 111.649,242.699 c -0.145,-0.712 -0.367,-1.414 -0.646,-2.081 -0.278,-0.679 -0.623,-1.325 -1.024,-1.926 -0.401,-0.612 -0.868,-1.18 -1.38,-1.692 -0.512,-0.512 -1.08,-0.979 -1.692,-1.38 -0.601,-0.401 -1.247,-0.746 -1.926,-1.024 -0.668,-0.278 -1.369,-0.501 -2.081,-0.634 -1.436,-0.289 -2.905,-0.289 -4.341,0 -0.712,0.134 -1.414,0.356 -2.081,0.634 -0.679,0.278 -1.325,0.623 -1.926,1.024 -0.612,0.401 -1.18,0.868 -1.692,1.38 -0.512,0.512 -0.979,1.08 -1.38,1.692 -0.401,0.601 -0.746,1.247 -1.024,1.926 -0.278,0.668 -0.501,1.369 -0.634,2.081 -0.145,0.712 -0.223,1.447 -0.223,2.17 0,0.723 0.078,1.458 0.223,2.17 0.134,0.712 0.356,1.414 0.634,2.093 0.278,0.668 0.623,1.313 1.024,1.914 0.401,0.612 0.868,1.18 1.38,1.692 0.512,0.512 1.08,0.979 1.692,1.38 0.601,0.401 1.247,0.746 1.926,1.024 0.668,0.278 1.369,0.501 2.081,0.634 0.712,0.145 1.447,0.223 2.17,0.223 0.724,0 1.458,-0.078 2.17,-0.223 0.712,-0.134 1.414,-0.356 2.081,-0.634 0.679,-0.278 1.325,-0.623 1.926,-1.024 0.612,-0.401 1.18,-0.868 1.692,-1.38 2.07,-2.07 3.261,-4.942 3.261,-7.869 0.002,-0.723 -0.065,-1.458 -0.21,-2.17 z"
+   id="path2-0"
+   style="fill:#00bc61;fill-opacity:1" />
+	</g>
+</g></g></svg>
